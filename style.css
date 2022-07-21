@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    MAIN WORK
+////////////////////////////////// */
+.hero-bg{
+    background: rgba(0,0,0,0.58) url(img/hero-bg/main-cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+}
+.navbar-brand img{
+    width: 1.5rem;
+}
+/* hero search bar */
+.hero-srchBar form{ 
+    max-width: 40rem ;
+    margin: 0 auto;
+}
+.hero-srchBar form input{
+    background: rgba(255,255,255,.30);
+    height: 3rem;
+}
+.hero-srchBar form input::placeholder{
+    color: white;
+}
