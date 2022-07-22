@@ -1,0 +1,5 @@
+//hero section
+1	https://www.wanderon.in/svg/cover-travellers.svg
+2	https://www.wanderon.in/svg/cover-star.svg
+3	https://www.wanderon.in/svg/cover-destination.svg
+	

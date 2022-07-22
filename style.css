@@ -3,7 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --primary-color:#0A9E88;
+}
+body{
+    font-family: Montserrat,sans-serif;;
+}
 
 
 
@@ -13,6 +18,7 @@
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     MAIN WORK
 ////////////////////////////////// */
+/* section -1  */
 .hero-bg{
     background: rgba(0,0,0,0.65) url(img/hero-bg/main-cover.jpg);
     background-position: center;
@@ -120,5 +126,54 @@
     .hero-setion1 .parent2{
         justify-content: space-between !important;
         
+    }
+}
+/* section-1 end ////////////////////////////////////////////////////////////////////////////////////// */
+
+/* section-2 start ////////////////////////////////////////////////////////////////////////////////////// */
+.explore .row .child1 img{
+    width: 4rem !important;
+}
+.explore .row .child1{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end ;
+    align-items: center;
+    text-align: center;
+    /* width: 13.7%; */
+    padding: 2rem;
+}
+.explore .row .child1 p{
+    font-size:16px ;
+    font-weight: 800;
+    font-family: Montserrat,sans-serif;
+    line-height: 20px;
+    padding-top: 1rem;
+}
+/* mobile view  */
+@media only screen and (max-width:576px) {
+    .explore .row .child1{
+        padding: 0vw 2vw 0vw 2vw;
+        margin: 0vw 2vw 0vw 2vw;
+    }
+   
+    .explore .row {
+        flex-direction: row;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .col-xs-4{
+        width: 27%;
+    }
+    .explore .row .child1 p {
+        font-size: 12px;
+    }
+    .BorderRight{
+        border-right: 1px solid rgba(0,0,0,0.1);
+    }
+    .BorderTop{
+        border-top: 1px solid rgba(0,0,0,0.1);
     }
 }
