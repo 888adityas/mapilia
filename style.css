@@ -22,6 +22,7 @@
     background-blend-mode: darken;
     background-attachment: fixed;
 }
+
 .navbar-nav .nav-item .nav-link{
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -45,4 +46,17 @@
 }
 .hero-setion1 .parent1 h1{
 font-size: 3.5rem;
+}
+@media only screen and (max-width:993px){
+    .navbar-nav .nav-item .nav-link {
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+}
+@media only screen and (max-width:339px){
+    .navbar-brand{
+        margin-left: -5px !important;
+    }
 }
