@@ -43,3 +43,6 @@
 .hero-srchBar form input::placeholder{
     color: white;
 }
+.hero-setion1 .parent1 h1{
+font-size: 3.5rem;
+}
