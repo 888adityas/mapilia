@@ -132,7 +132,7 @@
 <!-- hero typing effect -->
 <div class="container">
     <style>
-        @-webkit-keyframes blink {
+        @keyframes blink {
             0% {
                 opacity: 1;
             }
@@ -151,11 +151,11 @@
         $("#typed2").typing({
             strings: ['Spreading happiness', 'Connecting People', 'Creating Memories', 'Creating Stories', 'Fullfilling Adventure'],
             eraseDelay: 60,
-            typeDelay: 70,
+            typeDelay: 80,
             stringStartDelay: 1000,
             color: 'white',
             typingColor: 'white',
-            typingOpacity: '0.1',
+            typingOpacity: '1',
             loopCount: 100,
             cursorBlink: true,
             cursorChar: '<small>|</small>',
