@@ -14,27 +14,30 @@
     MAIN WORK
 ////////////////////////////////// */
 .hero-bg{
-    background: rgba(0,0,0,0.58) url(img/hero-bg/main-cover.jpg);
+    background: rgba(0,0,0,0.65) url(img/hero-bg/main-cover.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     background-blend-mode: darken;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    margin-top: -1rem !important;
+    padding-top: 0 !important;
 }
 
 .navbar-nav .nav-item .nav-link{
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
     font-weight: 500;
+    margin-right: 1rem;
 }
 .navbar-brand img{
-    width: 1.5rem;
+    width: 3rem;
+    margin-left: -2rem;
 }
 /* hero search bar */
 .hero-srchBar form{ 
-    max-width: 40rem ;
+    max-width: 38rem ;
     margin: 0 auto;
 }
 .hero-srchBar form input{
@@ -45,7 +48,30 @@
     color: white;
 }
 .hero-setion1 .parent1 h1{
-font-size: 3.5rem;
+    font-size: 48px;
+    font-family:Montserrat,sans-serif;
+    font-weight: 600;
+
+}
+.hero-setion1 .parent2 .child1{
+    padding-top: 8rem;
+    padding-bottom: 1.5rem;
+    /* margin-right: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.hero-setion1 .parent2 .child1 p{
+    font-weight: 300;
+    line-height: 4px;
+    font-size: 1.4rem;
+    color:lightgrey;
+}
+.hero-setion1 .parent2 .child1 img{
+    width: 3.5rem;
 }
 /* toggler button appears */
 @media only screen and (max-width:993px){
@@ -58,12 +84,41 @@ font-size: 3.5rem;
     .fa-bars{
         border: 0;
     }
-    .navbar-toggler::after{
-        border: 0;
+    .navbar-toggler{
+        outline: none;
     }
 }
 @media only screen and (max-width:339px){
     .navbar-brand{
         margin-left: -5px !important;
+    }
+}
+/* off canvas half size */
+@media only screen and (max-width:685px){
+    #offcanvasResponsive{
+        width: 60%;
+    }
+}
+/* mobile view  */
+@media only screen and (max-width:600px) {
+    .hero-setion1 .parent1 h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-setion1 .parent2 .child1 p {
+        font-size: .8rem;
+
+    }
+
+    .hero-setion1 .parent2 .child1 img {
+        width: 2rem;
+    }
+
+    .hero-bg {
+        height: 100vh;
+    }
+    .hero-setion1 .parent2{
+        justify-content: space-between !important;
+        
     }
 }

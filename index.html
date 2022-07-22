@@ -12,8 +12,13 @@
     <!-- my css -->
     <link rel="stylesheet" href="style.css">
     <!-- nav-links fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- font awsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!-- typing effect -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="typingEffect.js"></script>
     <title>WanderOn - travel More Spend Less ...!!!</title>
 </head>
 
@@ -23,12 +28,9 @@
     <div class="container-fluid hero-bg">
         <!-- navbar start -->
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid p-0 m-0 mx-lg-5 mx-md-5">
-                <a class="navbar-brand" href="#"><h4 class="text-white">EXPLORE <img src="img/logo1.png" alt=""></h4></a>
-                <!-- <ul> -->
-                    <!-- <li class="nav-item"> -->
-                        <a class="nav-link me-lg-5 pe-lg-5 pe-sm-2 me-sm-2 text-white" href="#"><i class="fa-solid fa-phone"></i> +91-9870301533 </a>
-                    <!-- </li> -->
+            <div class="container-fluid p-0 m-0 mx-lg-5 mx-md-5 border border-0">
+                <a class="navbar-brand" href="#"><h4 class="text-white"><img src="https://www.wanderon.in/wanderon-logo.svg" alt=""></h4></a>
+                <a class="nav-link me-lg-5 pe-lg-5 pe-sm-2 me-sm-2 text-white" href="#" style="font-size:14px;font-weight:500;"><i class="fa-solid fa-phone" style="font-size:14px;"></i> +91-9870301533 </a>                 
                 </ul>
                 <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
                     aria-controls="offcanvasResponsive" aria-label="Toggle navigation">
@@ -43,41 +45,26 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
                         
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">LEH LADAKH 2022</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">SPITI VALLEY 2022</a>
+                            </li>                      
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOGS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">CONTACT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT</a>
+                                <a class="nav-link" href="#">ABOUT US</a>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <!-- <div class="offcanvas offcanvas-end ms-5 ps-5" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">LEH LADAKH 2022</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SPITI VALLEY 2022</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
-                        </li>
-                    </ul>
-                    
-                </div> -->
+                </div>               
             </div>
         </nav>
         <!-- navbar end  -->
@@ -85,10 +72,11 @@
         <!-- GrandParent container -->
         <div class="container-fluid hero-setion1">
             <!-- Parent conatiner total - 3 -->
-            <div class="parent1 pt-5 mt-5  text-center d-flex justify-content-center flex-column">
+            <div class="parent1 pt-4 mt-5  text-center d-flex justify-content-center flex-column">
                 <h1 class="text-white">India's Coolest Travel Community</h1>
-                <h3 class="text-white ">Spreading Happiness !!</h3>
-                <div class="container-fluid mt-5 hero-srchBar text-center">
+                <!-- <h3 class="text-white ">Spreading Happiness !!</h3> -->
+                <h3><span id="typed2"></span><span class="cursor text-white"></span></h3>
+                <div class="container-fluid pt-4 mt-5 hero-srchBar text-center">
                     <form class="d-flex" role="search">
                         <input class="form-control" type="search" placeholder="Where Do You Wanna Go ?" aria-label="Search">
                         <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -96,7 +84,23 @@
                 </div>
 
             </div>
-            <div class="parent2"></div>
+            <div class="parent2 ms-lg-5 d-flex justify-content-around align-items-center">
+                <div class="child1">
+                    <img src="https://www.wanderon.in/svg/cover-travellers.svg" class="img-fluid"/>
+                    <p class=" pt-2">&ensp;50000+</p>
+                    <p class="">Happy Travellers</p>
+                </div>
+                <div class="child1">
+                    <img src="https://www.wanderon.in/svg/cover-star.svg" class="img-fluid" />
+                    <p class=" pt-2">&ensp;6200+</p>
+                    <p class="">5 Star Reviews</p>
+                </div>
+                <div class="child1">
+                    <img src="https://www.wanderon.in/svg/cover-destination.svg" class="img-fluid" />
+                    <p class=" pt-2">&ensp;300+</p>
+                    <p class="">Itineraries</p>
+                </div>
+            </div>
             <div class="parent3"></div>
 
         </div>
@@ -124,9 +128,74 @@
 
 
 
+<!-- \\\\\\\\\\\\\\\\\ javascript \\\\\\\\\\\\\\\\ -->
+<!-- hero typing effect -->
+<div class="container">
+    <style>
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+    
+            50% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        $('#typed').typing();
+        $("#typed2").typing({
+            strings: ['Spreading happiness', 'Connecting People', 'Creating Memories', 'Creating Stories', 'Fullfilling Adventure'],
+            eraseDelay: 60,
+            typeDelay: 70,
+            stringStartDelay: 1000,
+            color: 'white',
+            typingColor: 'white',
+            typingOpacity: '0.1',
+            loopCount: 100,
+            cursorBlink: true,
+            cursorChar: '<small>|</small>',
+            fade: false,
+            onTyping: function () {
+                console.log('onTyping');
+            },
+            onFinishedTyping: function () {
+                console.log('onFinishedTyping');
+            },
+            onErasing: function () {
+                console.log('onErasing');
+            },
+            onFinishedErasing: function () {
+                console.log('onFinishedErasing');
+            },
+            onAllTypingCompleted: function () {
+                console.log('onAllTypingCompleted');
+            },
+            onFinishedFadeErasing: function () {
+                console.log('onFinishedFadeErasing');
+            }
+        });
+    </script>
+    </div>
+    <script type="text/javascript">
 
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
 
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
+    </script>
+</div>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
