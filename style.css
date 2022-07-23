@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 100%;
+}
 :root{
     --primary-color:#0A9E88;
 }
@@ -12,9 +15,29 @@ body{
     font-size: 100%;
 }
 h2{
-    font-size: 3vw;
+    font-size: 150%;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
+}
+@media only screen and (max-width:998px){
+    html{
+        /* font-size: 55%; */
+    }
+}
+@media only screen and (max-width:768px){
+    html{
+        /* font-size: 45%; */
+    }
+}
+@media only screen and (max-width:576px){
+    html{
+        /* font-size: 35%; */
+    }
+}
+@media only screen and (max-width:300px){
+    html{
+        /* font-size: 25%; */
+    }
 }
 
 
@@ -217,5 +240,50 @@ h2{
     }
     .swiper-wrapper .child1{
         text-align: start;
+    }
+}
+/* dark blue background */
+.dark-bg{
+    background: url(https:www.wanderon.in/svg/home/cta.svg);
+
+}
+.bg-white1{
+    background-color: white;
+    border-radius: 20px 20px;
+    max-width:80%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+.dark-bg .parent11 .mychild1 img{
+    width: 20rem;
+    /* min-width: 6rem; */
+}
+
+.dark-bg .parent11 .mychild1 p, 
+.dark-bg .parent11 .mychild1 button{
+    font-size:1.5vw ;
+}
+.dark-bg .parent11 .mychild1 h3{
+    font-size: 2vw;
+    font-weight: 600;
+}
+.btn-secondary{
+    background-color:#13243F ;
+}
+@media only screen and (max-width:575px){
+    .p-xs{
+        padding: 5vw;
+    }
+    .dark-bg .parent11{
+        flex-direction: row-reverse;
+    }
+        .bg-white1 {
+            padding: 1rem;
+            padding-bottom: 0em;
+        }
+    .mychild1{
+        width: 50% !important;
+        padding: .4rem;
     }
 }
