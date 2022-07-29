@@ -14,6 +14,13 @@ body{
     background-color: white !important;
     font-size: 100%;
 }
+a{
+    text-decoration: none;
+    font-style: none;
+}
+ul{
+    list-style: none;
+}
 /* h2{
     font-size: 150%;
     font-family: Montserrat, sans-serif;
@@ -401,6 +408,46 @@ WanderOn's Secret Sauce
 /*\\\\\\\\\\\\\\\\\\\\\\\\\
         TESTIMONIALS
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.mytestimonial{
+    width: 100vw;
+}
 .carousel-item iframe{
-    width: 50rem;
+    width: 60vw;
+}
+.testimo img {
+    width: 3vw;
+}
+@media only screen and (max-width:831px){
+    .carousel-item iframe {
+            padding: 2rem;
+            width: 25rem;
+        }
+}
+@media only screen and (max-width:786px) {
+    .testimo img {
+            width: 8vw;
+        }
+
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\
+     FOOTER 1 grey
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.footer1{
+    background-color: rgb(58, 58, 58);
+}
+.footer1 p,
+.footer1 li{
+    font-size: 13px;
+    text-align: justify;
+}
+.BorderRight{
+    border-right: 2px solid white;
+}
+.foot-link:hover{
+    color: white !important;
+}
+@media only screen and (max-width:437px) {
+    .BorderRight {
+            border-right: none;
+        }
 }
