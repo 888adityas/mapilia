@@ -14,31 +14,56 @@ body{
     background-color: white !important;
     font-size: 100%;
 }
-h2{
+/* h2{
     font-size: 150%;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
-}
-@media only screen and (max-width:998px){
+} */
+/* @media only screen and (max-width:998px){
     html{
-        /* font-size: 55%; */
+        font-size: 55%;
     }
 }
 @media only screen and (max-width:768px){
     html{
-        /* font-size: 45%; */
+        font-size: 45%;
     }
 }
 @media only screen and (max-width:576px){
     html{
-        /* font-size: 35%; */
+        font-size: 35%;
     }
 }
 @media only screen and (max-width:300px){
     html{
-        /* font-size: 25%; */
+        font-size: 25%;
     }
+} */
+
+/* line efect */
+.list .list-link {
+    position: relative;
 }
+
+.list .list-link::after {
+    content: '';
+    position: absolute;
+    /* left: 100%; */
+    right: 100%;
+    bottom: 0%;
+    width: 0%;
+    height: .2rem;
+    background:white;
+    transition: 0.15s ease-out;
+}
+
+.list .list-link:hover::after {
+    left: 0%;
+    right: 0%;
+    width: 100%;
+}
+
+/* ========================================== */
 
 
 
@@ -117,6 +142,8 @@ h2{
             font-family: 'Poppins', sans-serif;
             font-size: 1rem;
             font-weight: 500;
+            border-bottom: 1px solid black;
+            padding: 5vw;
         }
     .fa-bars{
         border: 0;
@@ -148,7 +175,7 @@ h2{
     }
 
     .hero-setion1 .parent2 .child1 img {
-        width: 2rem;
+        width: 1.5rem;
     }
 
     .hero-bg {
@@ -156,6 +183,10 @@ h2{
     }
     .hero-setion1 .parent2{
         justify-content: space-between !important;
+        margin-top: 15vh;   
+    }
+    .hero-setion1 .parent1 {
+        margin-top: 15vh !important;
         
     }
 }
@@ -242,7 +273,10 @@ h2{
         text-align: start;
     }
 }
-/* dark blue background */
+
+/*\\\\\\\\\\\\\\\\\\\\\
+ dark blue background 
+ \\\\\\\\\\\\\\\\\\\\\\\*/
 .dark-bg{
     background: url(https:www.wanderon.in/svg/home/cta.svg);
 
@@ -271,19 +305,102 @@ h2{
 .btn-secondary{
     background-color:#13243F ;
 }
-@media only screen and (max-width:575px){
-    .p-xs{
+@media only screen and (max-width:575px) {
+    .p-xs {
         padding: 5vw;
     }
-    .dark-bg .parent11{
+
+    .dark-bg .parent11 {
         flex-direction: row-reverse;
     }
-        .bg-white1 {
-            padding: 1rem;
-            padding-bottom: 0em;
-        }
-    .mychild1{
+
+    .bg-white1 {
+        padding: 1rem;
+        padding-bottom: 0em;
+    }
+
+    .mychild1 {
         width: 50% !important;
         padding: .4rem;
     }
+
+    .dark-bg .parent11 .mychild1 p,
+    .dark-bg .parent11 .mychild1 button {
+        font-size: 1.8vw;
+    }
+
+    .dark-bg .parent11 .mychild1 h3 {
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .bg-white1 {
+        max-width: 90%;
+        padding-top: 1rem;
+    }
+
+}
+
+/*\\\\\\\\\\\\\\\\\\\
+CUSTOMISE YOUR TRIP
+\\\\\\\\\\\\\\\\\\\\\ */
+.himachal{
+    background: url(img/weekendTrips/himachal.jpg);  
+}
+.kashmir{
+    background: url(img/weekendTrips/kashmir.jpg);
+}
+.north-east{
+    background: url(img/weekendTrips/north-east.jpg);
+}
+.uttarakhand{
+    background: url(img/weekendTrips/uttarakhand.jpg);
+}
+.swiper-wrapper .child11 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    color: white;
+    width: 19rem !important;
+    height: 25rem !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.swiper-wrapper .child11 p{
+    border: 1px solid white !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px 35px;
+}
+@media only screen and (max-width:786px){
+    .custUrTrp h5{
+        font-size:3vw;
+    }
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\
+WanderOn's Secret Sauce
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.ch-1{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-align: center !important;
+}
+.ch-1 img {
+    width: 7rem !important;
+    height: 7rem !important;
+    padding: 1rem;
+}
+.ch-1 p{
+    line-height: 20px !important;
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\
+        TESTIMONIALS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.carousel-item iframe{
+    width: 50rem;
 }

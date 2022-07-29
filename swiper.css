@@ -51,10 +51,9 @@ body {
     margin-top: -9vh;
     box-shadow: 0px 0px 30px grey;
 }
-.swiper-button-prev{
-    /* margin-left: -2rem; */
-}
+
 .swiper-button-next::after,
 .swiper-button-prev::after{
     display: none;
 }
+
