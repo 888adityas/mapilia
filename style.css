@@ -412,7 +412,8 @@ WanderOn's Secret Sauce
     /* width: 100vw; */
 }
 .carousel-item iframe{
-    width: 60vw;
+    width: 40rem;
+    height: 20rem;
 }
 .testimo img {
     width: 3vw;
@@ -440,14 +441,14 @@ WanderOn's Secret Sauce
     font-size: 13px;
     text-align: justify;
 }
-.BorderRight{
+.BorderRRight{
     border-right: 2px solid white;
 }
 .foot-link:hover{
     color: white !important;
 }
 @media only screen and (max-width:437px) {
-    .BorderRight {
+    .BorderRRight {
             border-right: none;
         }
 }
