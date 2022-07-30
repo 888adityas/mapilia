@@ -285,8 +285,8 @@ ul{
  dark blue background 
  \\\\\\\\\\\\\\\\\\\\\\\*/
 .dark-bg{
-    /* background-image: url(https://www.wanderon.in/svg/home/cta.svg); */
-    background-color: #13243F;
+    background-image: url(https://www.wanderon.in/svg/home/cta.svg);
+    /* background-color: #13243F; */
 }
 .bg-white1{
     background-color: white;
