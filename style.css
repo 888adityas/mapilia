@@ -369,7 +369,7 @@ CUSTOMISE YOUR TRIP
     align-items: center !important;
     text-align: center !important;
     color: white;
-    width: 19rem !important;
+    /* width: 19rem !important; */
     height: 25rem !important;
     background-position: center;
     background-repeat: no-repeat;
