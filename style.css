@@ -409,7 +409,7 @@ WanderOn's Secret Sauce
         TESTIMONIALS
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .mytestimonial{
-    width: 100vw;
+    /* width: 100vw; */
 }
 .carousel-item iframe{
     width: 60vw;
