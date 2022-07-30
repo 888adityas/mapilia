@@ -410,8 +410,8 @@ WanderOn's Secret Sauce
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 .carousel-item iframe{
-    width: 40rem;
-    height: 20rem;
+    width: 50rem;
+    height: 25rem;
 }
 .testimo{
     padding: 5vw;
@@ -429,6 +429,7 @@ WanderOn's Secret Sauce
 /*\\\\\\\\\\\\\\\\\\\\\\\\\
      FOOTER 1 grey
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 .footer1{
     background-color: rgb(58, 58, 58);
 }
@@ -445,6 +446,38 @@ WanderOn's Secret Sauce
 }
 @media only screen and (max-width:437px) {
     .BorderRRight {
-            border-right: none;
+        border-right: none;
+    }
+
+    .padding-0 {
+        padding: 0;
+    }
+
+        .footer1 p,
+        .footer1 li {
+            font-size: 13px;
+            text-align: start;
         }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\
+     FOOTER 2 white
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.social img{
+    width: 1rem;
+}
+.social{
+    display: flex;
+    align-items: center;
+    display: inline;
+    background-color:lightgrey ;
+    padding: .4rem .6rem;
+    border-radius: 50% 50%;
+    margin: 1rem;
+}
+@media only screen and (max-width:535px) {
+    .con{
+        display: flex;
+        flex-direction: column;
+    }
 }
