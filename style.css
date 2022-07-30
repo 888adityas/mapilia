@@ -413,8 +413,8 @@ WanderOn's Secret Sauce
     width: 40rem;
     height: 20rem;
 }
-.testimo img {
-    width: 3vw;
+.testimo{
+    padding: 5vw;
 }
 @media only screen and (max-width:831px){
     .carousel-item iframe {
@@ -422,12 +422,10 @@ WanderOn's Secret Sauce
             width: 25rem;
         }
 }
-@media only screen and (max-width:786px) {
-    .testimo img {
-            width: 8vw;
-        }
+/* @media only screen and (max-width:786px) {
+  
 
-}
+} */
 /*\\\\\\\\\\\\\\\\\\\\\\\\\
      FOOTER 1 grey
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
