@@ -34,7 +34,7 @@
         <!-- navbar start -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid p-0 m-0 mx-lg-5 mx-md-5 border border-0">
-                <a class="navbar-brand" href="#"><h4 class="text-white"><img src="https://www.wanderon.in/wanderon-logo.svg" alt=""></h4></a>
+                <a class="navbar-brand" href="index.html"><h4 class="text-white"><img src="https://www.wanderon.in/wanderon-logo.svg" alt=""></h4></a>
                 <a class="nav-link me-lg-5 pe-lg-5 pe-sm-2 me-sm-2 text-white" href="#" style="font-size:14px;font-weight:500;"><i class="fa-solid fa-phone" style="font-size:14px;"></i> +91-9870301533 </a>                 
                 </ul>
                 <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
@@ -53,7 +53,7 @@
                         <ul class="navbar-nav list me-auto ms-lg-5 ms-md-5 mb-2 mb-lg-0">
                         
                             <li class="nav-item ">
-                                <a class="nav-link list-link" aria-current="page" href="#">LEH LADAKH 2022</a>
+                                <a class="nav-link list-link" aria-current="page" href="leh-ladakh.html">LEH LADAKH 2022</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link list-link" href="#">SPITI VALLEY 2022</a>
@@ -738,10 +738,31 @@ WanderOn's Secret Sauce
 
 
 
+<!-- back to top button -->
+<div class="container-fluid button-div d-none">
+    <a href="#" id="btt" class="position-fixed bottom-0 start-0">
+        <!-- <i class="fa-solid fa-angle-up text-center"></i> -->
+        <img class="fa-angle-up" src="img/phone-message-48.png" alt="">
+    </a>
+</div>
 
 
-
-
+<script>
+    $(function () {
+        var btt = $('.button-div');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() <= 700) {
+                btt.removeClass('btt-btn');
+                btt.addClass('d-none')
+            }
+            else {
+                btt.addClass('btt-btn');
+                btt.removeClass('d-none')
+            }
+        });
+    });
+</script>
+<!-- end back to top button  -->
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
