@@ -11,7 +11,7 @@ html{
 }
 body{
     font-family: Montserrat,sans-serif;
-    background-color: white !important;
+    background-color: #FAFAFA ;
     font-size: 100%;
 }
 a{
@@ -79,15 +79,21 @@ ul{
     background-color: lightgray;
     transition: .3s all ease-in-out;
     border-radius: 50%;
-    z-index: 0;
-
 }
 
 .btt-btn .fa-angle-up:hover {
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.363);
 }
-
+.packages{
+    transition: .3s all ease;
+    
+}
+.packages:hover {
+    /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.274); */
+    cursor: pointer;
+    transform: scale(1.03) !important;
+}
 /* ========================================== */
 
 
@@ -429,7 +435,7 @@ WanderOn's Secret Sauce
     height: 25rem;
 }
 .testimo{
-    padding: 5vw;
+    padding: 1vw 5vw 2vw 5vw;
 }
 @media only screen and (max-width:831px){
     .carousel-item iframe {
@@ -497,11 +503,24 @@ WanderOn's Secret Sauce
     }
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-                leh ladakh 
+                leh ladakh bg
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .leh-ladakh-bg{
     background: rgba(0, 0, 0, 0.411) url(https://wanderon-sales.s3.ap-south-1.amazonaws.com/gallery/triplist/categories/ladakh.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* background-attachment: fixed; */
+    margin-top: -1rem !important;
+    padding-top: 0 !important;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+             spiti valley bg
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.spiti-valley-bg{
+    background: rgba(0, 0, 0, 0.411) url(https://wanderon-sales.s3.ap-south-1.amazonaws.com/gallery/triplist/categories/spiti.jpg);
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
