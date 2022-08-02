@@ -127,7 +127,7 @@
     
             <div class="swiper-wrapper d-flex justify-content-between ">
                 <!-- (person 1) -->
-                <div class="swiper-slide text-center child1 ch-1 team">
+                <div class="swiper-slide text-center child1 ch-1 team d-flex ">
                     <img src="img/team/1.jpg" alt="">
                     <h4 style="font-weight: 600;">Govind Gaur</h4>
                     <h6 style="font-weight: 200;color:grey;">CEO, Founder</h6>
@@ -136,10 +136,12 @@
                         <img src="img/social/instagram.png" alt="">
                     </div>
                     <div class="borderGreen"></div>
-                    <p class="" style="font-size:12px;text-align:justify;">Govind is a visionary travelpreneur with an experience of leading more than 200 community trips. He’s fond of all kinds
+                    <p class="" style="font-size:12px;text-align:justify;line-height:0px;">
+                        Govind is a visionary travelpreneur with an experience of leading more than 200 community trips. He’s fond of all kinds
                     of voyages, yet his favourite are motorbiking expeditions, hence he accounts for 30000kms of extreme rides.He can hold a
                     conversation around business,human values and almost everything one can think of. The man knows how to get down to work
-                    and party, equally well.</p>
+                    and party, equally well.
+                    </p>
     
                 </div>
                 <!-- (person 2) -->
@@ -147,6 +149,17 @@
                     <img src="img/team/2.jpg" alt="">
                     <h4 style="font-weight: 600;">Madhusudan Jaju</h4>
                     <h6 style="font-weight: 200;color:grey;">Head of Marketing</h6>
+                    <div class="d-flex justify-content-center socialIcon">
+                        <img src="img/social/linkedin.png" alt="">
+                        <img src="img/social/instagram.png" alt="">
+                    </div>
+                    <div class="borderGreen"></div>
+                    <p class="" style="font-size:12px;text-align:justify;line-height:0px;">
+                        Madusudhan is a passionate learner, and an instinctive marketer. He has led more than 40 trips and has taken his hot
+                        wheels on a ride of total 50,000kms . He has a habit of finding a path even where it seems impossible, that is why he
+                        has been to over 30 treks, some well known, others unexplored. Being an avid reader, he is the perfect motivational
+                        speaker for the team.
+                    </p>
     
                 </div>
                 <!-- (person 3) -->
@@ -154,6 +167,16 @@
                     <img src="img/team/3.jpg" alt="">
                     <h4 style="font-weight: 600;">Chirag Jain</h4>
                     <h6 style="font-weight: 200;color:grey;">Head of Operations</h6>
+                    <div class="d-flex justify-content-center socialIcon">
+                        <img src="img/social/linkedin.png" alt="">
+                        <img src="img/social/instagram.png" alt="">
+                    </div>
+                    <div class="borderGreen"></div>
+                    <p class="" style="font-size:12px;text-align:justify;line-height:0px;">
+                        Chirag is a strong analyst of travel operations, and thus heads the responsibility of running the entire show. Just like
+                        Sindbad the Sailor, he finds out the most interesting experiences and tests them out before presenting to the community.
+                        With so many duties to perform, it is hard to believe that he managed to code the html and css for this website!
+                    </p>
     
                 </div>
             </div>
@@ -363,8 +386,8 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 20,
+            slidesPerView: 3,
+            spaceBetween: 30,
             slidesPerGroup: 1,
             loop: false,
             rewind: true,
@@ -384,19 +407,19 @@
             breakpoints: {
                 330: {
                     slidesPerView: 1,
-                    spaceBetween: 7,
+                    spaceBetween: 30,
                 },
                 666: {
                     slidesPerView: 2,
-                    spaceBetween: 10,
+                    spaceBetween: 30,
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 10,
+                    spaceBetween: 30,
                 },
                 1029: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
             }
         });

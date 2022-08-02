@@ -15,6 +15,7 @@ body {
 
 .swiper-slide {
     text-align: center;
+    width: 30%;
     font-size: 18px;
     /* background: #fff; */
 

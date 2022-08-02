@@ -76,14 +76,16 @@ ul{
     font-size: 2vw;
     padding: .5rem;
     margin: 2rem;
-    background-color: lightgray;
+    background-color: white;
     transition: .3s all ease-in-out;
     border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.363);
 }
 
 .btt-btn .fa-angle-up:hover {
     background-color: white;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.363);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.363);
+    border: none;
 }
 .packages{
     transition: .3s all ease;
