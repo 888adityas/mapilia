@@ -602,3 +602,8 @@ WanderOn's Secret Sauce
          font-size: 4vw !important;
         }
 }
+/* section 5 */
+.brands img{
+    width: 10rem !important;
+    height: 10rem !important;
+}
