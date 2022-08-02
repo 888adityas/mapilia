@@ -596,3 +596,9 @@ WanderOn's Secret Sauce
 .card {
     padding: 0 !important;
 }
+/* section 4 */
+@media only screen and (max-width:439px) {
+    .abtChild a{
+         font-size: 4vw !important;
+        }
+}
