@@ -592,3 +592,7 @@ WanderOn's Secret Sauce
     width: 6rem;
     height: 12px;
 }
+.card-body,
+.card {
+    padding: 0 !important;
+}
