@@ -528,3 +528,50 @@ WanderOn's Secret Sauce
     margin-top: -1rem !important;
     padding-top: 0 !important;
 }
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+             about us
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.about-bg{
+    background: rgba(0, 0, 0, 0.411) url(https://www.wanderon.in/about-us/about-us.jpeg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* background-attachment: fixed; */
+    margin-top: -1rem !important;
+    padding-top: 0 !important;
+    height: 28rem;
+}
+.we-stand-for{
+    max-width: 60%;
+}
+@media only screen and (max-width:831px){
+    .we-stand-for {
+            min-width: 100%;
+            padding: 3rem !important;
+        }
+}
+
+
+/*
+ our team members
+*/
+.team {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-align: center !important;
+}
+
+.team img {
+    width: 12rem !important;
+    height: 12rem !important;
+    padding: 1rem;
+    border-radius: 50% !important;
+
+}
+
+.team p {
+    line-height: 20px !important;
+}
