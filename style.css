@@ -115,7 +115,7 @@ ul{
     background-size: cover;
     background-blend-mode: darken;
     /* background-attachment: fixed; */
-    margin-top: -1rem !important;
+    margin-top: -.5rem !important;
     padding-top: 0 !important;
 }
 
@@ -127,7 +127,7 @@ ul{
     margin-right: 1rem;
 }
 .navbar-brand img{
-    width: 3rem;
+    width: 4rem;
     margin-left: -2rem;
 }
 /* hero search bar */
