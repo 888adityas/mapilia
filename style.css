@@ -115,10 +115,12 @@ ul{
     background-size: cover;
     background-blend-mode: darken;
     /* background-attachment: fixed; */
-    margin-top: -.5rem !important;
+    /* margin-top: -.5rem !important; */
     padding-top: 0 !important;
 }
-
+.navbar{
+    margin-top: -.5rem !important;
+}
 .navbar-nav .nav-item .nav-link{
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -128,7 +130,8 @@ ul{
 }
 .navbar-brand img{
     width: 4rem;
-    margin-left: -2rem;
+    margin-left: -1rem;
+    /* margin-top: .5rem; */
 }
 /* hero search bar */
 .hero-srchBar form{ 
@@ -374,17 +377,20 @@ ul{
 /*\\\\\\\\\\\\\\\\\\\
 CUSTOMISE YOUR TRIP
 \\\\\\\\\\\\\\\\\\\\\ */
-.himachal{
-    background: url(img/weekendTrips/himachal.jpg);  
+.thailand{
+    background: url(img/weekendTrips/thailand.jpg);  
 }
-.kashmir{
-    background: url(img/weekendTrips/kashmir.jpg);
+.bali{
+    background: url(img/weekendTrips/bali.jpg);
 }
-.north-east{
-    background: url(img/weekendTrips/north-east.jpg);
+.mauritius{
+    background: url(img/weekendTrips/mauritius.jpg);
 }
-.uttarakhand{
-    background: url(img/weekendTrips/uttarakhand.jpg);
+.maldives{
+    background: url(img/weekendTrips/maldives.jpg);
+}
+.dubai{
+    background: url(img/weekendTrips/dubai.jpg);
 }
 .swiper-wrapper .child11 {
     display: flex !important;
@@ -392,7 +398,7 @@ CUSTOMISE YOUR TRIP
     align-items: center !important;
     text-align: center !important;
     color: white;
-    /* width: 19rem !important; */
+   
     height: 25rem !important;
     background-position: center;
     background-repeat: no-repeat;
@@ -400,10 +406,12 @@ CUSTOMISE YOUR TRIP
     
 }
 .swiper-wrapper .child11 p{
-    border: 1px solid white !important;
+    background: rgba(0,0,0,.40);
+    border: 4px solid white !important;
     font-size: 1.5rem;
-    font-weight: bold;
-    padding: 20px 30%;
+    font-weight: 1000;
+    padding: 20px 50%;
+    text-shadow: 0px 5px 5px black;
 }
 @media only screen and (max-width:786px){
     .custUrTrp h5{
@@ -514,7 +522,7 @@ WanderOn's Secret Sauce
     background-size: cover;
     background-blend-mode: darken;
     /* background-attachment: fixed; */
-    margin-top: -1rem !important;
+    /* margin-top: -1rem !important; */
     padding-top: 0 !important;
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -527,7 +535,7 @@ WanderOn's Secret Sauce
     background-size: cover;
     background-blend-mode: darken;
     /* background-attachment: fixed; */
-    margin-top: -1rem !important;
+    /* margin-top: -1rem !important; */
     padding-top: 0 !important;
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -540,7 +548,7 @@ WanderOn's Secret Sauce
     background-size: cover;
     background-blend-mode: darken;
     /* background-attachment: fixed; */
-    margin-top: -1rem !important;
+    /* margin-top: -1rem !important; */
     padding-top: 0 !important;
     height: 28rem;
 }
