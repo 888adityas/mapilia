@@ -419,7 +419,7 @@ CUSTOMISE YOUR TRIP
     }
 }
 /*\\\\\\\\\\\\\\\\\\\\\\\\\
-WanderOn's Secret Sauce
+mapilia's Secret Sauce
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .ch-1{
     display: flex !important;
@@ -453,10 +453,7 @@ WanderOn's Secret Sauce
             width: 25rem;
         }
 }
-/* @media only screen and (max-width:786px) {
-  
 
-} */
 /*\\\\\\\\\\\\\\\\\\\\\\\\\
      FOOTER 1 grey
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -513,29 +510,39 @@ WanderOn's Secret Sauce
     }
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-                leh ladakh bg
+                THAILAND bg
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.leh-ladakh-bg{
-    background: rgba(0, 0, 0, 0.411) url(https://wanderon-sales.s3.ap-south-1.amazonaws.com/gallery/triplist/categories/ladakh.jpg);
+.thailand-bg{
+    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/thailand-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     /* background-attachment: fixed; */
-    /* margin-top: -1rem !important; */
     padding-top: 0 !important;
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-             spiti valley bg
+             MALDIVES bg
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.spiti-valley-bg{
-    background: rgba(0, 0, 0, 0.411) url(https://wanderon-sales.s3.ap-south-1.amazonaws.com/gallery/triplist/categories/spiti.jpg);
+.maldives-bg{
+    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/maldives-bg.jpg);
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     /* background-attachment: fixed; */
-    /* margin-top: -1rem !important; */
+    padding-top: 0 !important;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+             DUBAI bg
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.dubai-bg{
+    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/maldives-bg.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* background-attachment: fixed; */
     padding-top: 0 !important;
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
