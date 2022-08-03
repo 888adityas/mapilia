@@ -14,7 +14,7 @@ body {
 }
 
 .swiper-slide {
-    text-align: center;
+    text-align: left;
     width: 30%;
     font-size: 18px;
     /* background: #fff; */
@@ -34,7 +34,12 @@ body {
     align-items: center;
     border-radius: 20px 20px 20px 20px;
 }
-
+.swiper-slide p{
+    line-height: -30px !important;
+}
+.swiper-slide p:nth-child(3){
+    line-height: 16px;
+}
 
 .swiper-slide img {
     display: block;

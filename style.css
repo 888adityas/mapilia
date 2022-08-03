@@ -159,8 +159,6 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-
 }
 .hero-setion1 .parent2 .child1 p{
     font-weight: 300;
