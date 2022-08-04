@@ -1,4 +1,5 @@
 /* < !-- Demo styles --> */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 html,
 body {
     position: relative;
@@ -36,6 +37,8 @@ body {
 }
 .swiper-slide p{
     line-height: -30px !important;
+    font-family: 'Lora', serif !important;
+    font-size: 1rem !important;
 }
 .swiper-slide p:nth-child(3){
     line-height: 16px;
