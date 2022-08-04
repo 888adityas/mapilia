@@ -98,15 +98,20 @@ ul{
 }
 .offcanvas-bottom{
     width: 80%;
-    height: 75vh  !important;
+    height: 85vh  !important;
     margin-bottom: 6vh !important;
     margin: auto;
+    padding: 1rem;
+    
 }
+.myOffCanvasBottom{
+    border: 1px dashed var(--primary-color) !important;
+    border-radius: 10px 10px;
+}
+
 .btn-close {
     background-color: var(--primary-color) !important;
-    color: white !important;
     border-radius: 50% !important;
-    color: white;
 }
 /* ========================================== */
 
