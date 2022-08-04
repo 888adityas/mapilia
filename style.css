@@ -333,7 +333,7 @@ ul{
     font-size: 2vw;
     font-weight: 600;
 }
-.btn-secondary{
+.mychild1 .btn-secondary{
     background-color:#13243F ;
 }
 @media only screen and (max-width:575px) {
@@ -507,6 +507,15 @@ mapilia's Secret Sauce
         flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+
+
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
                 THAILAND bg
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -544,8 +553,36 @@ mapilia's Secret Sauce
     padding-top: 0 !important;
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-             about us
+             bangkok bg
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.bangkok-bg{
+    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/bangkok-bg.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* background-attachment: fixed; */
+    padding-top: 0 !important;
+}
+@media only screen and (max-width:535px) {
+    .buttn2-light{
+        justify-content: space-around !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\
+             about us
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .about-bg{
     background: rgba(0, 0, 0, 0.411) url(https://www.wanderon.in/about-us/about-us.jpeg);
     background-position:bottom;
