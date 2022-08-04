@@ -102,7 +102,12 @@ ul{
     margin-bottom: 6vh !important;
     margin: auto;
 }
-
+.btn-close {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: 50% !important;
+    color: white;
+}
 /* ========================================== */
 
 
