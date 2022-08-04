@@ -40,9 +40,9 @@ body {
     font-family: 'Lora', serif !important;
     
 }
-.swiper-slide p:nth-child(3){
+.myP p:nth-child(3){
     line-height: 16px;
-    font-size: 1.2rem !important;
+    font-size: 5rem !important;
 }
 
 .swiper-slide img {
