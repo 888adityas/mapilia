@@ -51,6 +51,14 @@
                     <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
                         aria-labelledby="offcanvasResponsiveLabel">
                         <div class="offcanvas-header">
+                            <a class="nav-link list-link" aria-current="page" title="Admin Panel" href="admin.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle"
+                                    viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg>
+                            </a>
                             <!-- <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5> -->
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
@@ -73,6 +81,16 @@
 
                                 <li class="nav-item ">
                                     <a class="nav-link list-link" href="about.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link list-link" aria-current="page" title="Admin Panel" href="admin.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle"
+                                            viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                        </svg>
+                                    </a>
                                 </li>
 
                             </ul>
@@ -107,7 +125,7 @@
                     
                     <div class="admin-btn">
                         <span id="addpkg"> <button class="btn btn-success" onclick="addpkg()">Add Package</button></span>
-                        <span id="allpkg"> <button class="btn btn-success" onclick="allpkg()">All Packages</button></span>
+                        <span id="allpkg"> <button class="btn btn-success" onclick="allpkg()">All Packages</button></span>                        
                     </div>
 
                     <div id="add-pkg" class="p-3 m-3 w-auto">
@@ -134,10 +152,10 @@
                         </form>
                     </div>
                     
-                    <div id="all-pkg" class="mt-3 p-3">
+                    <div id="all-pkg" class="mt-3 p-3 overflow-auto">
                         <h2>All Packages</h2>
                         <table width="100%">
-                            <tr>
+                            <tr class="">
                                 <th>Name</th>
                                 <th>Image</th>
                                 <th>Price</th>
@@ -145,18 +163,37 @@
                                 <th>Delete</th>
                             </tr>
                             <?php while($package_row_data = $package_row->fetch_assoc()) { ?>
-                            <tr>
+                            <tr class="border-light border-bottom mb-5">
                                 <td class="m-2">
-                                    <?php print $package_row_data['name']; ?>
+                                   <p class="m-2">Aditya Aditya AdityaAdityaAditya Aditya Aditya</p> 
+                                   <!-- <p class="m-2"><?php print $package_row_data['name']; ?></p>  -->
+                                </td>
+                                <td class="m-2 tbLimg">
+                                    <!-- <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" width="200" class="img-thumbnail img-fluid" alt="" /> -->
+                                    <img src="img/thailand/bangkok.jpg" class="img-fluid p-2" alt="">
                                 </td>
                                 <td class="m-2">
-                                    <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" width="200" />
+                                   <p class="m-2">600000</p> 
+                                   <!-- <p class="m-2"><?php print $package_row_data['max_price']; ?></p>  -->
+                                </td>
+                                <td class="m-1"><a href="" class="btn btn-success m-1"> Edit</a></td>
+                                <td class="m-1"><a href="" class="btn btn-danger m-1"> Delete</a><br /></td>
+                            </tr>
+                            <tr class="border-light border-bottom mb-5">
+                                <td class="m-2">
+                                   <p class="m-2">Aditya</p> 
+                                   <!-- <p class="m-2"><?php print $package_row_data['name']; ?></p>  -->
+                                </td>
+                                <td class="m-2 tbLimg">
+                                    <!-- <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" width="200" class="img-thumbnail img-fluid" alt="" /> -->
+                                    <img src="img/thailand/bangkok.jpg"  class="img-fluid p-2" alt="">
                                 </td>
                                 <td class="m-2">
-                                    <?php print $package_row_data['max_price']; ?>
+                                   <p class="m-2">600000</p> 
+                                   <!-- <p class="m-2"><?php print $package_row_data['max_price']; ?></p>  -->
                                 </td>
-                                <td class="m-2"><a href="" class="btn btn-success m-2"> Edit</a></td>
-                                <td class="m-2"><a href="" class="btn btn-danger m-2"> Delete</a><br /></td>
+                                <td class="m-1"><a href="" class="btn btn-success m-1"> Edit</a></td>
+                                <td class="m-1"><a href="" class="btn btn-danger m-1"> Delete</a><br /></td>
                             </tr>
                             <?php } ?>
                         </table>
