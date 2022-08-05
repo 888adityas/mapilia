@@ -588,15 +588,6 @@ mapilia's Secret Sauce
 }
 
 
-
-
-
-
-
-
-
-
-
 /* \\\\\\\\\\\\\\\\\\\\\\\\\
              about us
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -673,4 +664,36 @@ mapilia's Secret Sauce
 .brands img{
     width: 10rem !important;
     height: 10rem !important;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                ADMIN PANEL
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.admin-bg {
+    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/admin-bg.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* background-attachment: fixed; */
+    padding-top: 0 !important;
+}
+#add-pkg,
+#all-pkg {
+    display: none;
+}
+.admin-form{
+    max-width: 100%;
+}
+#all-pkg,
+#add-pkg{
+    box-shadow: 0px 0px 20px black;
+    background: rgba(0, 0, 0, .2);
+}
+
+#add-pkg form input{
+    background:rgba(255,255,255,.2);
+    background-blend-mode: darken;
+    color: white;
+    font-weight: 600;
 }

@@ -41,8 +41,8 @@ body {
     
 }
 .myP p:nth-child(3){
-    line-height: 16px;
-    font-size: 1.2rem !important;
+    line-height: 18px;
+    font-size: 1.1rem !important;
 }
 
 .swiper-slide img {
