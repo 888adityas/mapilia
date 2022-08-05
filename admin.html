@@ -116,39 +116,74 @@
                         function addpkg() {
                             document.getElementById("add-pkg").style.display = "block";
                             document.getElementById("all-pkg").style.display = "none";
+                            document.getElementById("add-cat").style.display = "none";
+                            document.getElementById("all-cat").style.display = "none";
                         }
                         function allpkg() {
                             document.getElementById("add-pkg").style.display = "none";
                             document.getElementById("all-pkg").style.display = "block";
+                            document.getElementById("add-cat").style.display = "none";
+                            document.getElementById("all-cat").style.display = "none";
+                        }
+                        function allcat() {
+                            document.getElementById("add-pkg").style.display = "none";
+                            document.getElementById("all-pkg").style.display = "none";
+                            document.getElementById("add-cat").style.display = "none";
+                            document.getElementById("all-cat").style.display = "block";
+                        }
+                        function addcat() {
+                            document.getElementById("add-pkg").style.display = "none";
+                            document.getElementById("all-pkg").style.display = "none";
+                            document.getElementById("add-cat").style.display = "block";
+                            document.getElementById("all-cat").style.display = "none";
                         }
                     </script>
                     
                     <div class="admin-btn">
+                        <span id="allpkg"> <button class="btn btn-success" onclick="allpkg()">Packages List</button></span>
                         <span id="addpkg"> <button class="btn btn-success" onclick="addpkg()">Add Package</button></span>
-                        <span id="allpkg"> <button class="btn btn-success" onclick="allpkg()">All Packages</button></span>                        
+                        <span id="allcat"> <button class="btn btn-success" onclick="allcat()">Category List</button></span>
+                        <span id="addcat"> <button class="btn btn-success" onclick="addcat()">Add Category</button></span>
                     </div>
 
-                    <div id="add-pkg" class="p-3 m-3 w-auto">
-                        <form action="#" method="post" enctype="multipart/form-data">
-                            <strong>Enter Package Name :</strong> <br />
-                            <!-- <label for="pkgname" class="form-label">Email address</label> -->
-                            <input type="text" name="pkgname" id="pkgname" class="form-control" required><br />
-                            <strong>Short Discription :</strong> <br />
-                            <input type="text" name="shortdiscription" id="pkgname" class="form-control" required><br />
-                            <strong>Feature Image :</strong> <br />
-                            <input type="file" name="fileToUpload" id="fileToUpload" class="btn btn-success form-control"><br />
-                            <strong>Days :</strong> <br />
-                            <input type="text" name="pkgdays" id="pkgdays" class="form-control" required><br />
-                            <select name="location" id="type" class="btn btn-success">
-                                <option value="" selected="selected">Select Destination</option>
-                                <option value="1">Thailand</option>
-                                <option value="2">Bali</option>
-                                <option value="3">Mauritius</option>
-                                <option value="4">Maldives</option>
-                                <option value="5">Dubai</option>
-                            </select><br /><br />
+                    <div id="add-pkg" class="p-3 m-3">
+                        <form action="#" method="post" enctype="multipart/form-data" class="row">
+                            <div class="col-lg-6 p-2 text-center">
+                                <strong>Enter Package Name :</strong>
+                                <input type="text" name="pkgname" id="pkgname" class="form-control" required>
+                            </div>
+                            <div class="col-lg-6 p-2 text-center">
+                                <strong>Feature Image :</strong>
+                                <input type="file" name="fileToUpload" id="fileToUpload" class="btn btn-success form-control">
+                            </div>
+                            <div class="col-lg-3 p-2 text-center">
+                                <strong>Short Discription :</strong>
+                                <!-- <input type="text" name="shortdiscription" id="pkgname" rows="3" class="form-control" required> -->
+                                <textarea class="form-control" name="shortdiscription" id="pkgname" rows="3" required></textarea>
+                            </div>
+                            <div class="col-lg-6 p-2 text-center">
+                                <strong>Discription :</strong>
+                                <!-- <input type="text" name="shortdiscription" id="pkgname" rows="3" class="form-control" required> -->
+                                <textarea class="form-control" name="shortdiscription" id="pkgname" rows="4" required></textarea>
+                            </div>
                             
-                            <button type="submit" value="Submit" name="submit" class="btn btn-primary">Submit</button>
+                            <div class="col-lg-2 p-2 text-center">
+                                <strong>Days :</strong>
+                                <input type="text" name="pkgdays" id="pkgdays" class="form-control" required>
+                            </div>
+                            <div class="p-2 text-center ">
+                                <select name="location" id="type" class="btn btn-success">
+                                    <option value="" selected="selected">Location</option>
+                                    <option value="1">Thailand</option>
+                                    <option value="2">Bali</option>
+                                    <option value="3">Mauritius</option>
+                                    <option value="4">Maldives</option>
+                                    <option value="5">Dubai</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <button type="submit" value="Submit" name="submit" class="btn btn-primary m-2">Submit</button>
+                            </div>
                         </form>
                     </div>
                     
@@ -165,11 +200,11 @@
                             <?php while($package_row_data = $package_row->fetch_assoc()) { ?>
                             <tr class="border-light border-bottom mb-5">
                                 <td class="m-2">
-                                   <p class="m-2">Aditya Aditya AdityaAdityaAditya Aditya Aditya</p> 
+                                   <p class="m-2">Aditya</p> 
                                    <!-- <p class="m-2"><?php print $package_row_data['name']; ?></p>  -->
                                 </td>
                                 <td class="m-2 tbLimg">
-                                    <!-- <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" width="200" class="img-thumbnail img-fluid" alt="" /> -->
+                                    <!-- <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" class="img-fluid p-2" alt="" /> -->
                                     <img src="img/thailand/bangkok.jpg" class="img-fluid p-2" alt="">
                                 </td>
                                 <td class="m-2">
@@ -177,27 +212,57 @@
                                    <!-- <p class="m-2"><?php print $package_row_data['max_price']; ?></p>  -->
                                 </td>
                                 <td class="m-1"><a href="" class="btn btn-success m-1"> Edit</a></td>
-                                <td class="m-1"><a href="" class="btn btn-danger m-1"> Delete</a><br /></td>
-                            </tr>
-                            <tr class="border-light border-bottom mb-5">
-                                <td class="m-2">
-                                   <p class="m-2">Aditya</p> 
-                                   <!-- <p class="m-2"><?php print $package_row_data['name']; ?></p>  -->
-                                </td>
-                                <td class="m-2 tbLimg">
-                                    <!-- <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" width="200" class="img-thumbnail img-fluid" alt="" /> -->
-                                    <img src="img/thailand/bangkok.jpg"  class="img-fluid p-2" alt="">
-                                </td>
-                                <td class="m-2">
-                                   <p class="m-2">600000</p> 
-                                   <!-- <p class="m-2"><?php print $package_row_data['max_price']; ?></p>  -->
-                                </td>
-                                <td class="m-1"><a href="" class="btn btn-success m-1"> Edit</a></td>
-                                <td class="m-1"><a href="" class="btn btn-danger m-1"> Delete</a><br /></td>
+                                <td class="m-1"><a href="" class="btn btn-danger m-1"> Delete</a></td>
                             </tr>
                             <?php } ?>
                         </table>
                     </div>
+
+                    <div id="all-cat" class="mt-3 p-3 overflow-auto">
+                        <h2>Categort List</h2>
+                        <table width="100%">
+                            <tr class="">
+                                <th>Category Name</th>
+                                <th>Parent Category</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                            <?php while($package_row_data = $package_row->fetch_assoc()) { ?>
+                            <tr class="border-light border-bottom mb-5">
+                                <td class="m-2">                                    
+                                   <p class="m-2"><?php print $package_row_data['name']; ?></p> 
+                                </td>
+                                <td class="m-2 tbLimg">
+                                    <!-- <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" class="img-fluid p-2" alt=""> -->
+                                    <img src="img/thailand/bangkok.jpg" class="img-fluid p-2" alt="">
+
+                                </td>                
+                                <td class="m-1"><a href="" class="btn btn-success m-1"> Edit</a></td>
+                                <td class="m-1"><a href="" class="btn btn-danger m-1"> Delete</a></td>
+                            </tr>
+                            <?php } ?>
+                        </table>
+                    </div>
+
+
+                    <div id="add-cat">
+                        <form action="#" method="post" enctype="multipart/form-data">
+                            <strong>Enter Category Name :</strong> <br />
+                            <input type="text" name="catname" id="catname" size="50" class="form-control" required><br />
+                            <strong>Select Parent Category :</strong> <br />
+                            <select name="location" id="type">
+                                <option value="" selected="selected">None</option>
+                                <option value="1">Thailand</option>
+                                <option value="2">Bali</option>
+                                <option value="3">Mauritius</option>
+                                <option value="4">Maldives</option>
+                                <option value="5">Dubai</option>
+                            </select><br /><br />
+                            <input type="submit" value="Submit" name="cat">
+                        </form>
+                    </div>
+
+                    
                 </div>
 
 

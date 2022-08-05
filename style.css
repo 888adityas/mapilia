@@ -682,18 +682,21 @@ mapilia's Secret Sauce
     width: 8rem;
 }
 #add-pkg,
-#all-pkg {
+#all-pkg,
+#add-cat,
+#all-cat {
     display: none;
 }
-.admin-form{
-    max-width: 100%;
-}
+
+#add-pkg,
 #all-pkg,
-#add-pkg{
+#add-cat,
+#all-cat{
     box-shadow: 0px 0px 20px black;
     background: rgba(0, 0, 0, .5);
 }
-#add-pkg form input{
+#add-pkg form input,
+#add-pkg form textarea{
     background:rgba(255,255,255,.2);
     background-blend-mode: darken;
     color: white;
