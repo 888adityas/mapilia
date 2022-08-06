@@ -1,0 +1,12 @@
+==new Added 6/8/2022==
+button name (Add Package)
+* Discription	| name="discription"	id="desc"
+* Duration	| name="duration"	id="dura"
+* Minimum price	| name="minPrice"	id="minPrice"
+* Maximum price	| name="maxPrice"	id="maxPrice"
+* Pickup	| name="pickup"		id="pickup"
+* Drop Location	| name="dropLoc"	id="dropLoc"
+* Itenary	| name="iternary"	id="iternary"
+* Date		| name="pkgDate"	id="pkgDate"
+* Other Info	| name="otherInfo"	id="otherInfo"
+* Video		| name="videoToUpload"	id="videoToUpload"

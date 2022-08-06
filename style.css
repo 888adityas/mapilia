@@ -696,7 +696,9 @@ mapilia's Secret Sauce
     background: rgba(0, 0, 0, .5);
 }
 #add-pkg form input,
-#add-pkg form textarea{
+#add-pkg form textarea,
+#add-cat form input,
+#add-cat form textarea{
     background:rgba(255,255,255,.2);
     background-blend-mode: darken;
     color: white;
