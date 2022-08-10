@@ -21,11 +21,11 @@ a{
 ul{
     list-style: none;
 }
-/* h2{
-    font-size: 150%;
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-} */
+.stickyTop {
+    position: -webkit-sticky;
+    position: sticky !important;
+    top: 0;
+}
 /* @media only screen and (max-width:998px){
     html{
         font-size: 55%;
@@ -51,24 +51,28 @@ ul{
 .list .list-link {
     position: relative;
 }
-
-.list .list-link::after {
-    content: '';
-    position: absolute;
-    /* left: 100%; */
-    right: 100%;
-    bottom: 0%;
-    width: 0%;
-    height: .2rem;
-    background:white;
-    transition: 0.15s ease-out;
+@media only screen and (min-width:768px){
+    .list .list-link::after {
+            content: '';
+            position: absolute;
+            /* left: 100%; */
+            right: 100%;
+            bottom: 0%;
+            width: 0%;
+            height: .2rem;
+            background: white;
+            transition: 0.15s ease-out;
+            visibility: hidden;
+        }
+    
+        .list .list-link:hover::after {
+            visibility: visible;
+            left: 0%;
+            right: 0%;
+            width: 100%;
+        }
 }
 
-.list .list-link:hover::after {
-    left: 0%;
-    right: 0%;
-    width: 100%;
-}
 
 /* back to top button */
 .btt-btn .fa-angle-up {
@@ -545,47 +549,7 @@ mapilia's Secret Sauce
     /* background-attachment: fixed; */
     padding-top: 0 !important;
 }
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-             MALDIVES bg
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.maldives-bg{
-    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/maldives-bg.jpg);
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    /* background-attachment: fixed; */
-    padding-top: 0 !important;
-}
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-             DUBAI bg
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.dubai-bg{
-    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/maldives-bg.jpg);
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    /* background-attachment: fixed; */
-    padding-top: 0 !important;
-}
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-             bangkok bg
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.bangkok-bg{
-    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/bangkok-bg.jpg);
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    /* background-attachment: fixed; */
-    padding-top: 0 !important;
-}
-@media only screen and (max-width:535px) {
-    .buttn2-light{
-        justify-content: space-around !important;
-    }
-}
+
 
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\
@@ -611,11 +575,7 @@ mapilia's Secret Sauce
             padding: 3rem !important;
         }
 }
-
-
-/*
- our team members
-*/
+/* our team members*/
 .team {
     display: flex !important;
     justify-content: center !important;
@@ -703,4 +663,74 @@ mapilia's Secret Sauce
     background-blend-mode: darken;
     color: white;
     font-weight: 600;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+             packageTrip bg
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.package-bg {
+    background: rgba(0, 0, 0, 0.5) url(img/backgrounds/bangkok-bg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* background-attachment: fixed; */
+    padding-top: 0 !important;
+}
+
+.sixty .sec-1 img {
+    padding: .5rem;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+}
+
+.btn-lightGrey {
+    background-color: #d4d4d4;
+}
+
+.btn-lightGrey:hover {
+    background-color: #0A9E88;
+    color: white;
+}
+
+.btn-lightGrey:active {
+    background-color: #0A9E88;
+    color: white;
+}
+
+.btn-lightGrey:focus {
+    background-color: #0A9E88;
+    color: white;
+}
+.Myaccordion .accordion-item .accordion-header .accordion-button{
+    background-color: #d4d4d4 ;
+    color: black;
+}
+.Myaccordion .accordion-item .accordion-header .accordion-button:hover{
+    background-color: grey ;
+    color: white;
+}
+/* \\\\\\\\\\\\\\ */
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-right: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+@media only screen and (max-width:535px) {
+    .buttn2-light {
+        justify-content: space-around !important;
+    }
+    .sixty .sec-1{
+        display: flex;
+        justify-content: center !important;
+    }
+    .sixty .sec-1 div p {
+        font-size:92% ;
+    }
 }
