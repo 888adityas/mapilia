@@ -51,29 +51,26 @@ ul{
 .list .list-link {
     position: relative;
 }
-@media only screen and (min-width:768px){
-    .list .list-link::after {
-            content: '';
-            position: absolute;
-            /* left: 100%; */
-            right: 100%;
-            bottom: 0%;
-            width: 0%;
-            height: .2rem;
-            background: white;
-            transition: 0.15s ease-out;
-            visibility: hidden;
-        }
-    
-        .list .list-link:hover::after {
-            visibility: visible;
-            left: 0%;
-            right: 0%;
-            width: 100%;
-        }
+
+.list .list-link::after {
+    content: '';
+    position: absolute;
+    /* left: 100%; */
+    right: 100%;
+    bottom: 0%;
+    width: 0%;
+    height: .2rem;
+    background: white;
+    transition: 0.15s ease-out;
+    /* visibility: hidden; */
 }
 
-
+.list .list-link:hover::after {
+    /* visibility: visible; */
+    left: 0%;
+    right: 0%;
+    width: 100%;
+}
 /* back to top button */
 .btt-btn .fa-angle-up {
     color: black;
