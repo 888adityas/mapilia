@@ -62,11 +62,11 @@ ul{
             height: .2rem;
             background: white;
             transition: 0.15s ease-out;
-            visibility: hidden;
+            /* visibility: hidden; */
         }
     
         .list .list-link:hover::after {
-            visibility: visible;
+            /* visibility: visible; */
             left: 0%;
             right: 0%;
             width: 100%;
