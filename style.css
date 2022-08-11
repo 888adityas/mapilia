@@ -693,7 +693,6 @@ mapilia's Secret Sauce
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
-  /* background-attachment: fixed; */
   padding-top: 0 !important;
 }
 
@@ -720,10 +719,10 @@ mapilia's Secret Sauce
 #add-pkg form textarea,
 #add-cat form input,
 #add-cat form textarea {
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2);
   background-blend-mode: darken;
   color: white;
-  font-weight: 600;
+  font-weight: 600; */
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
