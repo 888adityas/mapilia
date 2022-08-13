@@ -151,6 +151,7 @@ ul {
 /* section -1  */
 .hero-bg {
   background: rgba(0, 0, 0, 0.65) url(img/hero-bg/island2.jpg);
+  /* height: 100vh; */
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,7 +195,7 @@ ul {
   color: white;
 }
 .hero-setion1 .parent1{
-  /* padding-top: 10rem !important; */
+  /* padding-top: 7rem !important; */
 }
 .hero-setion1 .parent1 h1 {
   font-size:2.5rem;
@@ -338,7 +339,13 @@ ul {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
-
+/* forest bg */
+.forest-bg{
+  background-image: url(img/forest.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
 /* section-3 carousel1 start ////////////////////////////////////////////////////////////////////////////// */
 .swiper-wrapper .child1 {
   display: flex;
