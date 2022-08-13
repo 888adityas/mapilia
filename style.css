@@ -193,7 +193,9 @@ ul {
 .hero-srchBar form input::placeholder {
   color: white;
 }
-
+.hero-setion1 .parent1{
+  /* padding-top: 10rem !important; */
+}
 .hero-setion1 .parent1 h1 {
   font-size:2.5rem;
   font-family: Montserrat, sans-serif;
@@ -201,9 +203,7 @@ ul {
 }
 
 .hero-setion1 .parent2 .child1 {
-  /* padding-top: 3rem; */
   padding-bottom: 1.5rem;
-  /* margin-right: 5px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,25 +257,21 @@ ul {
 
 /* mobile view  */
 @media only screen and (max-width: 600px) {
-  .hero-setion1 .parent1 h1 {
-    font-size: 1.5rem;
+  .hero-setion1 .parent1 {
+    margin-top: 15vh !important;
   }
-
-  .hero-setion1 .parent2 .child1 p {
-    font-size: 0.6rem;
-  }
-
-  .hero-setion1 .parent2 .child1 img {
-    width: 1.5rem;
-  }
-
   .hero-setion1 .parent2 {
     justify-content: space-between !important;
     margin-top: 15vh;
   }
-
-  .hero-setion1 .parent1 {
-    margin-top: 5vh !important;
+  .hero-setion1 .parent1 h1 {
+    font-size: 1.5rem;
+  }
+  .hero-setion1 .parent2 .child1 p {
+    font-size: 0.6rem;
+  }
+  .hero-setion1 .parent2 .child1 img {
+    width: 1.5rem;
   }
 }
 
