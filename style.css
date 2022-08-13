@@ -26,6 +26,10 @@ a {
 ul {
   list-style: none;
 }
+.backdrop{
+  backdrop-filter: blur(4px);
+}
+
 
 /* @media only screen and (max-width:998px){
     html{
@@ -80,10 +84,10 @@ ul {
     width: 100% !important;
     height: 3.5rem;
     margin-left: -1rem !important;
-    backdrop-filter: blur(8px);
     margin-top: -3rem !important;
     padding-right: 1rem;
-    transition: .4s all ease-in;
+    /* transition: .4s all ease-in; */
+    backdrop-filter: blur(8px);
     /* transform: rotate(1turn); */
   }
 
@@ -143,8 +147,8 @@ ul {
 ////////////////////////////////// */
 /* section -1  */
 .hero-bg {
-  background: rgba(0, 0, 0, 0.65) url(img/hero-bg/main-cover.jpg);
-  background-position: center;
+  background: rgba(0, 0, 0, 0.65) url(img/hero-bg/island2.jpg);
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
@@ -194,19 +198,20 @@ ul {
 }
 
 .hero-setion1 .parent2 .child1 {
-  padding-top: 8rem;
+  /* padding-top: 3rem; */
   padding-bottom: 1.5rem;
   /* margin-right: 5px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .hero-setion1 .parent2 .child1 p {
   font-weight: 300;
-  line-height: 4px;
-  font-size: 1.4rem;
+  line-height: 10px;
+  font-size: 100%;
   color: lightgrey;
 }
 
@@ -254,7 +259,7 @@ ul {
   }
 
   .hero-setion1 .parent2 .child1 p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .hero-setion1 .parent2 .child1 img {
