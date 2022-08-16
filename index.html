@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="style.css">
     <!-- nav-links fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <!-- font awsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!-- html fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- font awsome cdn
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/> -->
     <!-- typing effect -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
@@ -136,18 +139,20 @@
             <div class="parent1 pt-4 mt-5 text-center d-flex justify-content-center flex-column">
                 <h1 class="text-white">We Care For Your Happiness</h1>                
                 <h5><span id="typed2"></span><span class="cursor text-white"></span></h5>
-                <div class="container-fluid pt-2 mt-2 hero-srchBar text-center">
-                    <form class="d-flex" role="search">
-                        <input class="form-control" type="search" id="search" placeholder="Where Do You Wanna Go ?" aria-label="Search">            
-                        <button class="btn btn-success" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>          
-                    </form>  
-                    <!-- <ul class="dropdown-menu" id="trip-list">
-                        <li><a class="trip-item" href="#">leh ladakh</a></li>
-                        <li><a class="trip-item" href="#">leh ladakh</a></li>
-                        <li><a class="trip-item" href="#">leh ladakh</a></li>
-                    </ul> -->
-                </div>
-                            
+                <div class=" container-fluid pt-2 mt-2 hero-srchBar text-center ">
+                    <form class="d-flex dropdown" role="search">
+                        <input class="form-control dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" type="search" id="search" placeholder="Where Do You Wanna Go ?" aria-label="Search">            
+                        <button class="btn btn-success" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>                                                                             
+                        <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
+                            <li class="srchBarLi"><a class="dropdown-item" href="thailand.html">THAILAND</a></li>
+                            <li class="srchBarLi"><a class="dropdown-item" href="#">BALI</a></li>
+                            <li class="srchBarLi"><a class="dropdown-item" href="#">MAURITIUS</a></li>
+                            <li class="srchBarLi"><a class="dropdown-item" href="#">MALDIVES</a></li>
+                            <li class="srchBarLi"><a class="dropdown-item" href="#">DUBAI</a></li>
+                        </ul>
+                    </form>                                          
+                </div>                                
             </div>
             <div class="parent2 pt-5 mt-lg-5 d-flex justify-content-around align-items-end">
                 <div class="child1">
@@ -163,7 +168,6 @@
                     <p class="mt-2">Experienced Destination Experts</p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -247,12 +251,12 @@
         <h3 class="mb-3" style="font-weight: 800;">Best of Thailand</h3>
         <div class="swiper-wrapper">
             <!-- (packages) -->
-            <div class="swiper-slide myP child1 packages ">
+            <div class="swiper-slide myP child1 packages">
                  <img src="img/trips/manali-leh-5.jpg" alt=""> <!--change image -->
-                 <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
-                 <p><b>Manali Leh Road Trip</b></p>
-                 <p>Starts At <b> &#8377;29,999/-</b></p>
-                 <p class="" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>              
+                 <p class="mt-2 mb-2 mt-1" style="color: var(--primary-color);font-size:11px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
+                 <p class="mb-2 mt-1"><b>Manali Leh Road Trip</b></p>
+                 <p class="mb-2 mt-1">Starts At <b> &#8377;29,999/-</b></p>
+                 <p class="mb-2 mt-1" style="color: var(--primary-color);font-size:13px;"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>              
             </div>
             <!-- (packages) -->
             <div class="swiper-slide myP child1 packages">
@@ -432,59 +436,7 @@
 
 <!-- /* carousel-4 weekend trips //////////////////////////////////////////////// */ -->
 <!-- Swiper -->
-<div class="carousel1 container-fluid pt-5 pb-5 ">
-    
-    <div class="swiper mySwiper ps-5 pe-5">
-        <h3 class="mb-3" style="font-weight: 800;">Weekend Trips</h3>
-        <div class="swiper-wrapper">
-            <!-- (packages 1) -->
-            <div class="swiper-slide myP child1 packages">
-                 <img src="img/weekendTrips/1.jpg" alt=""> <!--change image -->
-                 <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
-                 <p><b>Bir Billing</b></p>
-                 <p>Starts At <b> &#8377;7,999/-</b></p>
-                 <p class="" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>              
-            </div>
-            <!-- (packages 2) -->
-            <div class="swiper-slide myP child1 packages">
-                 <img src="img/weekendTrips/2.jpg" alt=""> <!--change image -->
-                 <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
-                 <p><b>Chopta Tungnath</b></p>
-                 <p>Starts At <b> &#8377;7,999/-</b></p>
-                 <p class="" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>              
-            </div>
-            <!-- (packages 3) -->
-            <div class="swiper-slide myP child1 packages">
-                 <img src="img/weekendTrips/3.jpg" alt=""> <!--change image -->
-                 <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
-                 <p><b>Kasol Kheerganga</b></p>
-                 <p>Starts At <b> &#8377;7,499/-</b></p>
-                 <p class="" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>              
-            </div>
-            <!-- (packages 4) -->
-            <div class="swiper-slide myP child1 packages">
-                 <img src="img/weekendTrips/4.jpg" alt=""> <!--change image -->
-                 <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
-                 <p><b>Tirthan Valley</b></p>
-                 <p>Starts At <b> &#8377;7,499/-</b></p>
-                 <p class="" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>              
-            </div>
-            <!-- (packages 5) -->
-            <div class="swiper-slide myP child1 packages">
-                 <img src="img/weekendTrips/5.jpg" alt=""> <!-- change image -->
-                 <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
-                 <p><b>Manali Atal Tunnel Jispa</b></p>
-                 <p>Starts At <b> &#8377;7,999/-</b></p>
-                 <p class="" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>              
-            </div>
-            
-    
-        </div>
-        <div class="swiper-button-next"><i class="fa-solid fa-arrow-right-long"></i></div>
-        <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
-        <div class="swiper-pagination"></div>
-    </div>
-</div>
+
 <!-- /* end carousel-4 ///////////////////////////////////////////////////////////// */ -->
 
 

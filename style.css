@@ -5,7 +5,8 @@
 }
 
 html {
-  font-size: 100%;
+  /* font-size: 100%; */
+  
 }
 
 :root {
@@ -13,9 +14,10 @@ html {
 }
 
 body {
-  font-family: Montserrat, sans-serif;
+  /* font-family: Montserrat, sans-serif; */
   background-color: #fafafa;
   font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -150,7 +152,7 @@ ul {
 ////////////////////////////////// */
 /* section -1  */
 .hero-bg {
-  background: rgba(0, 0, 0, 0.65) url(img/hero-bg/island2.jpg);
+  background: rgba(0, 0, 0, 0.65) url(img/hero-bg/island21.jpg);
   /* height: 100vh; */
   background-position: bottom;
   background-repeat: no-repeat;
@@ -194,6 +196,10 @@ ul {
 .hero-srchBar form input::placeholder {
   color: white;
 }
+.hero-srchBar form ul{
+  width: 100% !important;
+
+}
 .hero-setion1 .parent1{
   /* padding-top: 7rem !important; */
 }
@@ -213,8 +219,8 @@ ul {
 }
 
 .hero-setion1 .parent2 .child1 p {
-  font-weight: 300;
-  line-height: 10px;
+  /* font-weight: 300; */
+  /* line-height: 1px; */
   font-size: 100%;
   color: lightgrey;
 }
@@ -355,11 +361,10 @@ ul {
 
 .swiper-wrapper .child1 p {
   font-size: 15px;
-  /* color: var(--primary-color); */
-  font-family: Montserrat, sans-serif;
-  letter-spacing: 2px;
+  /* font-family: Montserrat, sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   line-height: 0.5rem;
-  font: lighter;
+  letter-spacing: 1.5px;
 }
 
 @media only screen and (max-width: 985px) {
