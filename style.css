@@ -368,11 +368,6 @@ ul {
 }
 
 @media only screen and (max-width: 985px) {
-  .swiper-wrapper .child1 p {
-    font-size: 80%;
-    line-height: 15px;
-  }
-
   .swiper-wrapper .child1 {
     text-align: start;
   }
