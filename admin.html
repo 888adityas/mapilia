@@ -160,9 +160,9 @@
                         <span id="allcat"> <button class="btn btn-success" onclick="allcat()">Category List</button></span>
                         <span id="addcat"> <button class="btn btn-success" onclick="addcat()">Add Category</button></span>
                     </div>
-<!-- action="" method="post" class="row justify-content-center" -->
                     <div id="add-pkg" class="p-3 m-3">
                         
+                        <!-- action="" method="post" class="row justify-content-center" -->
                             <form action="">
                                 <div class="col-lg-6 p-2 text-center">
                                     <strong>Enter Package Name :</strong>
@@ -255,10 +255,47 @@
                                 <strong>Days :</strong>
                                 <input type="text" name="pkgdays" id="pkgdays" class="form-control" required>
                             </div>
-                            <div class="col-lg-6 p-2 text-center">
+                            <!-- <div class="col-lg-6 p-2 text-center">
                                 <strong>Video :</strong>
                                 <input type="file" name="videoToUpload" id="videoToUpload" class="form-control" required>
+                            </div> -->
+                            <div class="col-lg-6 p-2 text-center">
+                                <strong>Duration :</strong>
+                                <input type="text" name="duration" id="dura" class="form-control" required>
                             </div>
+                            <div class="col-lg-3 p-2 text-center">
+                                <strong>Minimum price :</strong>
+                                <input type="text" name="minPrice" id="minPrice" class="form-control" required>
+                            </div>
+                            <div class="col-lg-3 p-2 text-center">
+                                <strong>Maximum price :</strong>
+                                <input type="text" name="maxPrice" id="maxPrice" class="form-control" required>
+                            </div>
+                            <div class="col-lg-6 p-2 text-center">
+                                <strong>Pickup :</strong>
+                                <input type="text" name="pickup" id="pickup" class="form-control" required>
+                            </div>
+                            <div class="col-lg-6 p-2 text-center">
+                                <strong>Drop Location :</strong>
+                                <input type="text" name="dropLoc" id="dropLoc" class="form-control" required>
+                            </div>
+                            <div class="col-lg-6 p-2 text-center">
+                                <strong>Itenary :</strong>
+                                <input type="text" name="itenary" id="itenary" class="form-control" required>
+                            </div>
+                            <div class="col-lg-6 p-2 text-center">
+                                <strong>Other Info :</strong>
+                                <input type="text" name="otherInfo" id="otherInfo" class="form-control" required>
+                            </div>
+                            <div class="col-lg-12 p-2 text-center">
+                                <strong>Discription :</strong>
+                                <textarea class="form-control" name="discription" id="desc" rows="20" required></textarea>
+                            </div>
+                            <div class="col-lg-11 p-2 text-center">
+                                <strong>Short Discription :</strong>
+                                <textarea class="form-control" name="shortdiscription" id="shrtdesc" rows="3" required></textarea>
+                            </div>
+                            
                             
 
 
