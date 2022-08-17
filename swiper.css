@@ -37,21 +37,17 @@ body {
     border-radius: 20px 20px 20px 20px;
 }
 .swiper-slide p{
-    line-height: -4.5rem !important;     
-}
-.swiper-slide p:nth-child(3){
-    /* font-family: 'Open Sans', sans-serif ; */
+    line-height: 1rem !important;     
     font-family: 'Open Sans', sans-serif;
 }
-.myP p:nth-child(3){
+
+/* .myP p{
     line-height: 14px;
     font-size: 1rem;
     font-weight: bolder !important;
     font-family: 'Open Sans', sans-serif;
-}
-.myP {
-    line-height: -50px !important;
-}
+} */
+
 .swiper-slide img {
     display: block;
     width: 100%;
