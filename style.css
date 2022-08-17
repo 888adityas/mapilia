@@ -170,7 +170,7 @@ ul {
 /* section -1  */
 .hero-bg {
   background: rgba(0, 0, 0, 0.65) url(img/hero-bg/island21.jpg);
-  /* height: 100vh; */
+  /* height: 102vh; */
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,9 +217,7 @@ ul {
   width: 100% !important;
 
 }
-.hero-setion1 .parent1{
-  /* padding-top: 7rem !important; */
-}
+
 .hero-setion1 .parent1 h1 {
   font-size:2.5rem;
   font-family: Montserrat, sans-serif;
@@ -256,6 +254,9 @@ ul {
     border-bottom: 1px solid black;
     padding: 5vw;
   }
+    /* .hero-bg {
+      height: 70vh; 
+    } */
 
   .fa-bars {
     border: 0;

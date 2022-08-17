@@ -214,9 +214,22 @@
         </div>
     </div>
 </section> -->
+<div class="container pt-4 text-center">
+    
+        <!-- <p style="font-size: 1.7rem;font-weight:1000;">
+            Plan the ultimate vacation 
+        </p> -->
+        <h3 class="text-center" style="font-weight: 800;">Plan the Ultimate Vacation</h3>
 
-<section>
-    <div class="carousel1 container pt-5">
+        <center><div class="orangeLine p-0 m-0"></div></center>
+
+         <p style="font-size: 1rem;font-weight:500;color:grey;margin-top:.3rem !important;">
+            The unmatched beauties of nature
+        </p> 
+    
+</div>
+<section> 
+    <div class="carousel1 container pt-3">
         <div class="swiper mySwiper1 ps-5 pe-5">
             <!-- <h3 class="mb-3" style="font-weight: 800;">Weekend Trips</h3> -->
             <div class="swiper-wrapper">
@@ -558,7 +571,7 @@
 <section>
     <div class="container scrtSauce pt-5 pb-5">
         <center><h2 style="font-weight: bolder;">Why Book With Mapilia?</h2></center>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper2">
             <div class="swiper-wrapper">               
                 <div class="swiper-slide child1 ch-1">
                     <img src="https://www.wanderon.in/offer-page/third-party.svg" alt="">
@@ -953,6 +966,47 @@ CUSTOMISE YOUR TRIP
         breakpoints: {
             330: {
                 slidesPerView: 2,
+                spaceBetween: 7,
+            },
+            666: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            1029: {
+                slidesPerView: 4,
+                spaceBetween: 7,
+            },
+        }
+    });
+</script>
+<!-- Initialize Swiper thailand bali dubai -->
+<script>
+    var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
+        loop: false,
+        rewind: true,
+        //autoplay: {
+        // delay: 2500,
+        //disableOnInteraction: false,
+        //},
+        //loopFillGroupWithBlank: true,
+        //pagination: {
+        //el: ".swiper-pagination",
+        //clickable: true,
+        //},
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            330: {
+                slidesPerView: 1,
                 spaceBetween: 7,
             },
             666: {
