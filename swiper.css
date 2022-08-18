@@ -42,8 +42,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 .swiper h3{
-    /* line-height: 1rem !important;      */
     font-family: 'Aboreto', cursive !important;
+    animation-iteration-count: infinite;
+    animation-duration: .2s;
 }
 
 /* .myP p{

@@ -650,42 +650,50 @@ Why Book With Mapilia?
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-                THAILAND bg
+                destination bg
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.thailand-bg {
+.destination-bg {
   background: rgba(0, 0, 0, 0.5) url(img/backgrounds/thailand-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
-  /* background-attachment: fixed; */
   padding-top: 0 !important;
 }
+@media only screen and (max-width:480px){
+  .destination-bg {
+    height: 68vh;
+  }
 
+}
 /* \\\\\\\\\\\\\\\\\\\\\\\\\
              about us
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .about-bg {
   background: rgba(0, 0, 0, 0.411)
-    url(https://www.wanderon.in/about-us/about-us.jpeg);
+    url(img/backgrounds/about-bg.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
-  /* background-attachment: fixed; */
-  /* margin-top: -1rem !important; */
   padding-top: 0 !important;
   height: 28rem;
 }
-
+.mapilia-bg{
+  background-image:url(img/backgrounds/mapilia-bg2.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
 .we-stand-for {
-  max-width: 60%;
+  /* max-width: 60%; */
 }
 
 @media only screen and (max-width: 831px) {
   .we-stand-for {
     min-width: 100%;
-    padding: 3rem !important;
+    padding: 1rem !important;
   }
 }
 
@@ -748,7 +756,7 @@ Why Book With Mapilia?
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
                 ADMIN PANEL
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.admin-bg {
+/* .admin-bg {
   background: rgba(0, 0, 0, 0.5) url(img/backgrounds/admin-bg.jpg);
   min-height: 100vh;
   background-position: center;
@@ -781,11 +789,11 @@ Why Book With Mapilia?
 #add-pkg form textarea,
 #add-cat form input,
 #add-cat form textarea {
-  /* background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   background-blend-mode: darken;
   color: white;
-  font-weight: 600; */
-}
+  font-weight: 600;
+} */
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
              packageTrip bg
