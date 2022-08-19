@@ -5,7 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.row{
+  margin: 0;
+}
 html {
   /* font-size: 100%; */
   
@@ -51,6 +53,9 @@ ul {
   height: 3px;
   /* background-color: palegreen; */
   background-color: var(--primary-color);
+}
+.bg-primaryGreen{
+  background-color:var(--primary-color);
 }
 /* @media only screen and (max-width:998px){
     html{
@@ -185,7 +190,6 @@ ul {
 
 .navbar {
   margin-top: -0.5rem;
- 
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -869,4 +873,16 @@ Why Book With Mapilia?
   .sixty .sec-1 div p {
     font-size: 80%;
   }
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+             contact-bg
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.contact-bg{
+  background: rgba(0, 0, 0, 0.411) url(img/backgrounds/contact-bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding-top: 0 !important;
+    /* height: 28rem; */
 }
