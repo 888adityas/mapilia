@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- nav-links fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- typing effect -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="typingEffect.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper.css">
+    <!--  -->
+
+
+
+
+
+    <title>Mapilia - Travel Vacations ...!!!</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-logo.png">
+</head>
+
+<body>
+    <!-- My JS file -->
+    <script src="main.js"></script>
+    <!-- section - 1  -->
+    <section>
+        <div class="container-fluid package-bg">
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0 ms-3 me-lg-0 ms-lg-5 border border-0">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" title="HOME"></a>
+                    <a class="nav-link me-lg-5 pe-lg-5 pe-sm-2 me-sm-2 text-white" href="#"
+                        style="font-size:14px;font-weight:500;"><i class="fa-solid fa-phone" style="font-size:14px;"></i>
+                        +91-9870301533 </a>
+            
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" aria-label="Toggle navigation">
+                        <span class=""><i class="fa-solid fa-bars"></i></span>
+                    </button>
+            
+                    <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+                        aria-labelledby="offcanvasResponsiveLabel">
+                        <div class="offcanvas-header">
+                            <!-- <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5> -->
+            
+            
+                            <a class="nav-link list-link" aria-current="page" title="Admin Panel" href="admin.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg>
+                            </a>
+            
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav list me-auto ms-lg-5 ms-md-5 mb-2 mb-lg-0">
+                                <li class="nav-item list-link">
+                                    <a class="nav-link" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item list-link dropdown">
+                                    <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        TRIPS
+                                    </a>
+                                    <ul class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="thailand.html">THAILAND</a></li>
+                                        <li><a class="dropdown-item" href="#">BALI</a></li>
+                                        <li><a class="dropdown-item" href="#">MAURITIUS</a></li>
+                                        <li><a class="dropdown-item" href="#">MALDIVES</a></li>
+                                        <li><a class="dropdown-item" href="#">DUBAI</a></li>
+                                        <!-- <li>
+                                                                        <hr class="dropdown-divider">
+                                                                    </li> -->
+                                    </ul>
+                                </li>
+                                <!-- <li class="nav-item list-link dropdown">
+                                            <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                DOMESTIC TRIPS
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">RAJASTHAN</a></li>
+                                                <li>
+                                                                        <hr class="dropdown-divider">
+                                                                    </li>
+                                            </ul>
+                                        </li> -->
+            
+            
+                                <li class="nav-item ">
+                                    <a class="nav-link list-link" href="about.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link list-link" href="contact.html">CONTACT US</a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link list-link" aria-current="page" title="Admin Panel" href="admin.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                        </svg>
+                                    </a>
+                                </li>
+            
+                            </ul>
+                            <center class="mt-5 d-lg-none">
+                                <p>we are social</p>
+                                <a href="" class="mx-2"><img src="img/facebook32.png" alt=""></a>
+                                <a href="" class="mx-2"><img src="img/instagram32.png" alt=""></a>
+                            
+                            </center>
+            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end  -->
+            <!-- GrandParent container -->
+            <div class="container-fluid hero-setion1 pb-5">
+                <!-- Parent conatiner total - 3 -->
+                <div class="parent1 pt-4 mt-5 mb-5 text-center d-flex justify-content-center flex-column">
+                    <h1 class="text-white">BANGKOK</h1>
+                    <h3 class="text-white ">city known for ornate shrines and vibrant street life</h3>
+                </div>
+                <div class="d-flex justify-content-end buttn2-light">
+                    <a><button type="button" class="btn btn-light ms-2 ms-lg-3 px-4">GET ITINERARY</button></a>
+                    <a href="#bookNow"><button type="button" class="btn btn-light ms-lg-5 px-4">BOOK NOW</button></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /* section-1 end ////////////////////////////////////////////////////////////////////////////////////// */ -->
+
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+    section 2  
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <section class="p-3">
+        <style>
+            #abtItinerary,
+            #abtOtherInf,
+            #minusimg {
+                display: none;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        </style>
+
+        <div class="row m-0 p-lg-5">
+            <div class="col-lg-8 sixty">
+                <div class="sec-1 d-flex justify-content-start">
+                    <div class="text-center mx-lg-4 px-2 fs-6">
+                        <img src="https://www.wanderon.in/svg/clock-quick.svg" alt="" width="40">
+                        <p class="" style="color:grey;">Duration<br>
+                            <span style="font-weight:600;color:black;font-size:1.5em;" class="">7N - 8D</span>
+                        </p>
+
+                    </div>
+                    <div class="text-center mx-lg-3 px-2">
+                        <img src="https://www.wanderon.in/svg/rupee.svg" alt="" width="40">
+                        <p class="" style="color:grey;">Starting Price<br>
+                            <span style="font-weight:600;color:black;font-size:1.5em;">₹26,999/-</span>
+                        </p>
+                    </div>
+                    <div class="text-center mx-lg-3 px-2">
+                        <img src="https://www.wanderon.in/svg/location-pin.svg" alt="" width="40">
+                        <p class="" style="color:grey;">Pickup & Drop<br>
+                            <span style="font-weight:600;color:black;font-size:1.5em;">Bangkok</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- About trip  -->
+                <div class="sec-2 d-flex justify-content-around mt-2 mt-lg-4 threeBtn">
+                    <button onclick="aBoutTrip();" id="aboutTrip" type="button" class="btn btn-lightGrey px-lg-5"
+                        style="background-color: #0A9E88;"><b>About Trip</b></button>
+                    <button onclick="Itinerary();" id="Itinerary" type="button"
+                        class="btn btn-lightGrey px-lg-5"><b>Itinerary</b></button>
+                    <button onclick="OtherInfo();" id="OtherInfo" type="button"
+                        class="btn btn-lightGrey px-lg-5"><b>Other Info</b></button>
+                </div>
+                <div class="mt-5" id="aboutJS">
+                    <div class="position-relative">
+                        <h3 style="
+                            color: rgba(0, 0, 0, 0.13);
+                            font-size:4rem;
+                            position: absolute;
+                            top: -20px;
+                            left: 0;
+                            bottom: 0;
+                            z-index: -1;
+                            ">
+                            <b>ABOUT</b>
+                        </h3>
+                        <h3 class="mb-lg-4" style="color: rgba(0, 0, 0, 0.685);"><b>ABOUT</b></h3>
+                    </div>
+                    <p>
+                        Ladakh Road trip is not just another destination in a traveller’s bucket list, but it is a dream
+                        in itself. A bike trip
+                        to Ladakh doesn’t create stories, it creates CHRONICLES! Ladakh is a poet’s best poem, a
+                        painter’s best painting and a
+                        photographer’s best muse. As the altitude rises, the landscapes en route to Ladakh change like
+                        shots of a motion
+                        picture. The mighty Himalayan Mountains, pristine glacier lakes and beautiful valleys together
+                        make Ladakh for the
+                        nature’s wonder that it is. Always keeping you high on adrenaline, an adventure trip to Ladakh
+                        through the world’s
+                        highest passes rewards you with the most breathtaking views you could ever imagine.
+                        <br><br>
+                        One thing that’s extremely important is the culture & people of the place. Ladakh is home to one
+                        of the most hospitable
+                        tribes in the World. Their colorful and peace-loving culture will make you fall in love with the
+                        localites
+                        instantaneously! We suggest that you savour Ladakhi food while you are there because you won’t
+                        get that yummy food
+                        anywhere else in the World.
+                        <br><br>
+                        One thing that’s extremely important is the culture & people of the place. Ladakh is home to one
+                        of the most hospitable
+                        tribes in the World. Their colorful and peace-loving culture will make you fall in love with the
+                        localites
+                        instantaneously! We suggest that you savour Ladakhi food while you are there because you won’t
+                        get that yummy food
+                        anywhere else in the World.
+                        <br><br>
+                        So for how long are you just gonna read about the wonders of Ladakh? It’s time to tick these
+                        activities off your bucket
+                        list with WanderOn’s Leh Ladakh Package for 2022! Go on and create your own Ladakh Chronicles!
+
+                </div>
+                <!-- itinerary -->
+                <div class="mt-5" id="abtItinerary">
+                    <div class="position-relative">
+                        <h3 style="
+                                color: rgba(0, 0, 0, 0.13);
+                                font-size:4rem;
+                                position: absolute;
+                                top: -20px;
+                                left: 0;
+                                bottom: 0;
+                                z-index: -1;
+                                ">
+                            <b>ITINERARY</b>
+                        </h3>
+                        <h3 class="mb-lg-4" style="color: rgba(0, 0, 0, 0.685);"><b>ITINERARY</b></h3>
+                    </div>
+
+                    <div class="accordion Myaccordion" id="accordionExample">
+                        <!-- first -->
+                        <div class="accordion-item my-lg-2">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button onclick="rotateSvg()" class="accordion-button text-black d-block" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <div class="row d-flex justify-content-evenl align-items-start ">
+                                        <div class="col-2 d-flex justify-content-start">
+                                            <b>Day 1:</b>
+                                        </div>
+                                        <div class="col">
+                                            <p>Leh Arrival - Acclimatization Day</p>
+                                        </div>
+                                        <!-- <div class="col rotatesvg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                                            </svg>
+                                        </div> -->
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p
+                                        style="font-size:14px; text-align:left; color:black; margin-bottom:0rem;padding:.5rem;">
+                                        ● It is believed that you make connection with an average of 150 people in a
+                                        lifespan. How much do you think these
+                                        people
+                                        offer you to make your time worthy? We’re curating a community where the people
+                                        you meet add value to your life,
+                                        through
+                                        experiences, memories and everything in between.<br>
+                                        ● That’s why our community comprise of every person who takes a trip with us, is
+                                        connected with us on social media,
+                                        and
+                                        those who meet us in our everyday lives. The goal is to create a happy impact
+                                        on whosoever you come across.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second -->
+                        <div class="accordion-item my-lg-2">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button text-black d-block" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseTwo">
+                                    <div class="row d-flex justify-content-start align-items-start ">
+                                        <div class="col-2 d-flex justify-content-start">
+                                            <b>Day 2:</b>
+                                        </div>
+                                        <div class="col">
+                                            <p>Visit Hall Of Fame,
+                                                Shanti Stupa, Magnetic Hills And Pathar Sahib Gurudwara
+                                                Shanti Stupa, Magnetic Hills And Pathar Sahib Gurudwara</p>
+                                        </div>
+                                    </div>
+
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p
+                                        style="font-size:14px; text-align:left; color:black; margin-bottom:0rem;padding:.5rem;">
+                                        ● It is believed that you make connection with an average of 150 people in a
+                                        lifespan. How much do you think these
+                                        people
+                                        offer you to make your time worthy? We’re curating a community where the people
+                                        you meet add value to your life,
+                                        through
+                                        experiences, memories and everything in between.<br>
+                                        ● That’s why our community comprise of every person who takes a trip with us, is
+                                        connected with us on social media,
+                                        and
+                                        those who meet us in our everyday lives. The goal is to create a happy impact
+                                        on whosoever you come across.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- third -->
+                        <div class="accordion-item my-lg-2">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button text-black d-block" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                                    aria-controls="collapseThree">
+                                    <div class="row d-flex justify-content-start align-items-start ">
+                                        <div class="col-2 d-flex justify-content-start">
+                                            <b>Day 3:</b>
+                                        </div>
+                                        <div class="col">
+                                            <p>Leh Arrival - Acclimatization Day</p>
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p
+                                        style="font-size:14px; text-align:left; color:black; margin-bottom:0rem;padding:.5rem;">
+                                        ● It is believed that you make connection with an average of 150 people in a
+                                        lifespan. How much do you
+                                        think these
+                                        people
+                                        offer you to make your time worthy? We’re curating a community where the people
+                                        you meet add value to
+                                        your life,
+                                        through
+                                        experiences, memories and everything in between.<br>
+                                        ● That’s why our community comprise of every person who takes a trip with us, is
+                                        connected with us on
+                                        social media,
+                                        and
+                                        those who meet us in our everyday lives. The goal is to create a happy impact
+                                        on whosoever you come across.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- other info -->
+                <div class="mt-5 pb-2 border-bottom" id="abtOtherInf">
+                    <div class="position-relative">
+                        <h3 style="
+                                color: rgba(0, 0, 0, 0.13);
+                                font-size:4rem;
+                                position: absolute;
+                                top: -20px;
+                                left: 0;
+                                bottom: 0;
+                                z-index: -1;
+                                ">
+                            <b>OTHER INFO</b>
+                        </h3>
+                        <h3 class="mb-lg-4" style="color: rgba(0, 0, 0, 0.685);"><b>OTHER INFO</b></h3>
+                    </div>
+                    <h4 class=""><b>Must Carry</b></h4>
+                    <p>
+                        Authentic Government ID Card
+                        Comfortable warm clothing like woolen socks, cap, fleece jackets or warmers, down jacket,
+                        toiletries.
+                        Sunscreen & lip balm, Good U/V protection sunglasses
+                        Personal Medicines (if any) & few medicines for altitude sickness (a must)
+                        Power Banks (No Electricity at Sarchu, Pangong Tso & Jispa)
+                        Only post-paid numbers will work in Leh City & apart from that most of the area is no network
+                        zone
+                    </p>
+                </div>
+                <!-- videos -->
+                <div class="mt-5">
+                    <div class="position-relative">
+                        <h3 style="
+                                color: rgba(0, 0, 0, 0.13);
+                                font-size:4rem;
+                                position: absolute;
+                                top: -20px;
+                                left: 0;
+                                bottom: 0;
+                                z-index: -1;
+                                ">
+                            <b>VIDEOS</b>
+                        </h3>
+                        <h3 class="mb-lg-4" style="color: rgba(0, 0, 0, 0.685);"><b>VIDEOS</b></h3>
+                    </div>
+                    <div class="mt-lg-3 d-flex flex-row overflow-auto ">
+                        <div class="swiper-slide child1 ch-1 p-2">
+                            <iframe width="100%" src="https://www.youtube.com/embed/GUdX0m6V0rw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide child1 ch-1 p-2">
+                            <iframe width="100%" src="https://www.youtube.com/embed/GUdX0m6V0rw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide child1 ch-1 p-2">
+                            <iframe width="100%" src="https://www.youtube.com/embed/GUdX0m6V0rw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide child1 ch-1 p-2">
+                            <iframe width="100%" src="https://www.youtube.com/embed/GUdX0m6V0rw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- photos -->
+                <div class="mt-5">
+                    <div class="position-relative">
+                        <h3 style="
+                                color: rgba(0, 0, 0, 0.13);
+                                font-size:4rem;
+                                position: absolute;
+                                top: -20px;
+                                left: 0;
+                                bottom: 0;
+                                z-index: -1;
+                                ">
+                            <b>PHOTOS</b>
+                        </h3>
+                        <h3 class="mb-lg-4" style="color: rgba(0, 0, 0, 0.685);"><b>PHOTOS</b></h3>
+                    </div>
+                    <!-- album 1 -->
+                    <div class="row p-1 d-flex">
+                        <div class="col-3">
+                            <img class="img-fluid rounded" src="img/thailand/bangkok.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid rounded" src="img/thailand/bangkok.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid rounded" src="img/thailand/bangkok.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid rounded" src="img/thailand/bangkok.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- album 2 -->
+                    <div class="row p-1 d-flex">
+                        <div class="col-3">
+                            <img class="img-fluid rounded" src="img/thailand/bangkok.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid rounded" src="img/thailand/bangkok.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid rounded" src="img/thailand/bangkok.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid rounded" src="img/thailand/bangkok.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4 forty stickyTop">
+                <div class="sticky-top mt-2">
+                    <h5>Trips so perfect that Travelers want you to know more about their experiences!</h5>
+                    <iframe width="100%" src="https://www.youtube.com/embed/GUdX0m6V0rw" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="position-relative">
+                        <h3 style="
+                                                                color: rgba(0, 0, 0, 0.13);
+                                                                font-size:3rem;
+                                                                position: absolute;
+                                                                top: -13px;
+                                                                left: 0;
+                                                                bottom: 0;
+                                                                margin-top:1rem;                                  
+                                                                z-index: -1;
+                                                                ">
+                            <b>GET IN TOUCH</b>
+                        </h3>
+                        <h3 class="mb-lg-1" style="color: rgba(0, 0, 0, 0.685);"><b>GET IN TOUCH</b></h3>
+                    </div>
+                    <form action="">
+                        <a id="bookNow">
+                            <div class="mb-2">
+                        </a>
+                        <label for="fullName" class="form-label">Full Name *</label>
+                        <input type="email" class="form-control" id="fullName" placeholder="" required>
+                </div>
+                <div class="mb-2">
+                    <label for="contactNo" class="form-label">Contact No. *</label>
+                    <input type="email" class="form-control" id="contactNo" placeholder="" required>
+                </div>
+                <div class="mb-2">
+                    <label for="emailId" class="form-label">Email Id *</label>
+                    <input type="email" class="form-control" id="emailId" placeholder="" required>
+                </div>
+                <div class="mb-2">
+                    <label for="preferredDes" class="form-label">Preferred Destination *</label>
+                    <input type="email" class="form-control" id="emailId" placeholder="" required>
+                </div>
+                <div class="mb-2">
+                    <button type="submit" name="abtSubmit" class="btn btn-secondary px-4">SUBMIT</button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- section similar trips -->
+    <section>
+        <!-- Swiper -->
+        <div class="carousel1 container-fluid pt-0 pb-5 ">
+
+            <div class="swiper mySwiper ps-5 pe-5">
+                <h3 class="mb-3" style="font-weight: 800;">Similar Trips</h3>
+                <div class="swiper-wrapper">
+                    <!-- (packages 1) -->
+                    <div class="swiper-slide myP child1 packages">
+                        <img src="img/weekendTrips/1.jpg" alt="">
+                        <!--change image -->
+                        <p class="mt-2" style="color: var(--primary-color);font-size:12px;">
+                            <i class="fa-regular fa-clock"> 7N -8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i>
+                        </p>
+                        <p class="mt-2"><b>Bir Billing</b></p>
+                        <p class="mt-2">Starts At <b> &#8377;7,999/-</b></p>
+                        <p class="mt-2" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>
+                    </div>
+                    <!-- (packages 2) -->
+                    <div class="swiper-slide myP child1 packages">
+                        <img src="img/weekendTrips/2.jpg" alt="">
+                        <!--change image -->
+                        <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
+                        <p class="mt-2"><b>Chopta Tungnath</b></p>
+                        <p class="mt-2">Starts At <b> &#8377;7,999/-</b></p>
+                        <p class="mt-2" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>
+                    </div>
+                    <!-- (packages 3) -->
+                    <div class="swiper-slide myP child1 packages">
+                        <img src="img/weekendTrips/3.jpg" alt="">
+                        <!--change image -->
+                        <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
+                        <p class="mt-2"><b>Kasol Kheerganga</b></p>
+                        <p class="mt-2">Starts At <b> &#8377;7,499/-</b></p>
+                        <p class="mt-2" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>
+                    </div>
+                    <!-- (packages 4) -->
+                    <div class="swiper-slide myP child1 packages">
+                        <img src="img/weekendTrips/4.jpg" alt="">
+                        <!--change image -->
+                        <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
+                        <p class="mt-2"><b>Tirthan Valley</b></p>
+                        <p class="mt-2">Starts At <b> &#8377;7,499/-</b></p>
+                        <p class="mt-2" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>
+                    </div>
+                    <!-- (packages 5) -->
+                    <div class="swiper-slide myP child1 packages">
+                        <img src="img/weekendTrips/5.jpg" alt=""> <!-- change image -->
+                        <p class="mt-2" style="color: var(--primary-color);font-size:12px;"><i class="fa-regular fa-clock"> 7N - 8D</i>&emsp;<i class="fa-solid fa-location-dot"> Delhi - Leh</i></p>
+                        <p class="mt-2"><b>Manali Atal Tunnel Jispa</b></p>
+                        <p class="mt-2">Starts At <b> &#8377;7,999/-</b></p>
+                        <p class="mt-2" style="color: var(--primary-color);"><b><i class="fa-solid fa-calendar-week"></i> 28 July</b></p>
+                    </div>
+
+
+                </div>
+                <div class="swiper-button-next"><i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+    FOOTER 1  grey
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <section>
+        <div class="container-fluid footer1 padding-0">
+            <div class="row p-4 padding-0 m-0">
+                <!-- part-1 -->
+                <div class=" col-sm-12 col-lg-4 BorderRRight p-lg-3 ps-lg-5 padding-0">
+                    <p class="text-white">About Us</p>
+                    <p class="text-secondary">We at Mapilia are a modern travel community that provides end to end
+                        travel packages in India and abroad. We design the
+                        best travel itineraries that encourage group traveling for like-minded people. Our services
+                        include road trips, trekking
+                        expeditions, corporate trips, and customized tour packages. On our trips, we ensure hassle-free
+                        traveling, top-notch
+                        accommodation and guided sightseeing that too in a budget that won’t burn a hole in your pocket.
+                        Just give us your dates
+                        and be ready to experience traveling like never before.</p>
+                </div>
+                <!-- part-2 -->
+                <div class="col BorderRRight p-lg-3 padding-0">
+                    <ul>
+                        <p class="text-white">Weekend Trips</p>
+                        <li><a class="text-secondary foot-link" href="">Bir Billing</a></li>
+                        <li><a class="text-secondary foot-link" href="">Chopta Tungnath</a></li>
+                        <li><a class="text-secondary foot-link" href="">Kasol Kheerganga</a></li>
+                        <li><a class="text-secondary foot-link" href="">Tirthan Valley</a></li>
+                        <li><a class="text-secondary foot-link" href="">Manali Solang</a></li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <p class="text-white">Himalayan Escapades</p>
+                        <li><a class="text-secondary foot-link" href="">Kasol Manali</a></li>
+                        <li><a class="text-secondary foot-link" href="">Parvati Valley</a></li>
+                        <li><a class="text-secondary foot-link" href="">Bir Kasol</a></li>
+                        <li><a class="text-secondary foot-link" href="">Mcleod Bir Tirthan</a></li>
+                        <li><a class="text-secondary foot-link" href="">Mcleod Bir Barot</a></li>
+                    </ul>
+                </div>
+                <!-- part-3 -->
+                <div class="col BorderRRight p-lg-3 padding-0">
+                    <ul>
+                        <p class="text-white">Backpacking Trips</p>
+                        <li><a class="text-secondary foot-link" href="">Himachal Backpacking</a></li>
+                        <li><a class="text-secondary foot-link" href="">Spiti Valley Trips</a></li>
+                        <li><a class="text-secondary foot-link" href="">Ladakh Trips</a></li>
+                        <li><a class="text-secondary foot-link" href="">Meghalaya Backpacking</a></li>
+                        <li><a class="text-secondary foot-link" href="">Kashmir Backpacking</a></li>
+                    </ul>
+                    <br>
+                    
+                </div>
+                <!-- part-4 -->
+                <div class="col-lg-3 col-sm-2 p-lg-3 padding-0 margin-Top">
+                    <ul>
+                        <h4 class="text-white">Quick Links</h4><br>
+                        <li><a class="text-white foot-link" href="">Privacy Policy</a></li>
+                        <li><a class="text-white  foot-link" href="">Cancellation Policy</a></li>
+                        <li><a class="text-white  foot-link" href="">Terms & Conditions</a></li>
+                        <li><a class="text-white  foot-link" href="">Disclaimer</a></li>
+                        <li><a class="text-white  foot-link" href="">About Us</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+    FOOTER 2  white
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <section>
+        <div class="d-flex justify-content-center pt-3">
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/facebook.svg" alt="">
+            </div>
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/instagram.svg" alt="">
+            </div>
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/pinterest.svg" alt="">
+            </div>
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/linkedin.svg" alt="">
+            </div>
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/youtube.svg" alt="">
+            </div>
+        </div>
+        <div class="text-center">
+            <p style="font-weight: bold;">ADDRESS</p>
+            <p>MAPILIA VACATIONS</p>
+            <p>3rd Floor, Building No-750, Phase V, Udyog Vihar, Sector-19, Gurugram, Haryana-122022</p>
+        </div>
+        <div class="d-flex justify-content-around pb-4 text-center con">
+            <h6 style="font-weight: bold;">hello@mapilia.in</h6>
+            <h6 style="font-weight: bold;">+91-9870301533</h6>
+            <h6 style="font-weight: bold;">www.mapilia.in</h6>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- back to top button -->
+    <div class="container-fluid button-div d-none">
+        <a href="#" id="btt" class="position-fixed bottom-0 end-0">
+            <!-- <i class="fa-solid fa-angle-up text-center"></i> -->
+            <img class="fa-angle-up" src="img/whatsapp.png" alt="">
+
+        </a>
+    </div>
+    <!-- On scroll Navbar class add -->
+    <script>
+        // navbar
+        $(function () {
+            var navbar = $('.navbar-expand-lg');
+            $(window).scroll(function () {
+                if ($(window).scrollTop() <= 200) {
+                    navbar.removeClass('navbar-scroll');
+                }
+                else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            var btt = $('.button-div');
+            $(window).scroll(function () {
+                if ($(window).scrollTop() <= 700) {
+                    btt.removeClass('btt-btn');
+                    btt.addClass('d-none')
+                }
+                else {
+                    btt.addClass('btt-btn');
+                    btt.removeClass('d-none')
+                }
+            });
+        });
+    </script>
+    <!-- end back to top button  -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            slidesPerGroup: 1,
+            loop: false,
+            rewind: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loopFillGroupWithBlank: true,
+            //pagination: {
+            //el: ".swiper-pagination",
+            //clickable: true
+            //},
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                330: {
+                    slidesPerView: 1,
+                    spaceBetween: 7,
+                },
+                666: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1029: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            }
+        });
+    </script>
+
+    <!-- end swiper \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <!-- \\\\\\\\\\\\\\\\\ javascript \\\\\\\\\\\\\\\\ -->
+    <!-- hero typing effect -->
+    <div class="container">
+        <style>
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+        <script>
+            $('#typed').typing();
+            $("#typed2").typing({
+                strings: ['Spreading happiness', 'Connecting People', 'Creating Memories', 'Creating Stories', 'Fullfilling Adventure'],
+                eraseDelay: 60,
+                typeDelay: 80,
+                stringStartDelay: 1000,
+                color: 'white',
+                typingColor: 'white',
+                typingOpacity: '1',
+                loopCount: 100,
+                cursorBlink: true,
+                cursorChar: '<small>|</small>',
+                fade: false,
+                onTyping: function () {
+                    console.log('onTyping');
+                },
+                onFinishedTyping: function () {
+                    console.log('onFinishedTyping');
+                },
+                onErasing: function () {
+                    console.log('onErasing');
+                },
+                onFinishedErasing: function () {
+                    console.log('onFinishedErasing');
+                },
+                onAllTypingCompleted: function () {
+                    console.log('onAllTypingCompleted');
+                },
+                onFinishedFadeErasing: function () {
+                    console.log('onFinishedFadeErasing');
+                }
+            });
+        </script>
+    </div>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+</body>
+
+</html>

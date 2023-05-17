@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Admin panel css link -->
+    <link rel="stylesheet" href="admiStyle.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- nav-links fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- typing effect -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="typingEffect.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper.css">
+
+
+
+    <title>Mapilia - Travel Vacations ...!!!</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-logo.png">
+</head>
+
+<body>
+    <!-- section - 1  -->
+    <section>
+        <div class="container-fluid admin-bg">
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0 ms-3 me-lg-0 ms-lg-0 border border-0">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" title="HOME"></a>
+                
+                <ul class="navbar-nav list me-auto ms-lg-5 ms-md-5 mb-2 mb-lg-0">
+                    <li class="nav-item list-link">
+                        <a class="nav-link" href="admin.html">Admin Home  |</a>
+                    </li>
+                    <li class="nav-item list-link">
+                        <a class="nav-link" href="admin.html">Back  |</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- navbar end  -->
+            <!-- India's Coolest Travel Community -->
+            <!-- GrandParent container -->
+            <div class="container-fluid d-flex justify-content-center">
+                <!-- Parent conatiner total - 3 -->
+                <div class="admin-form text-center text-white d-flex justify-content-center flex-column">
+                    <!-- ///////////////////////////////////////////////
+                                        ADMIN WORK
+                    //////////////////////////////////////////////////// -->
+                    
+                    <script type="text/javascript">
+                        function addpkg() {
+                            document.getElementById("add-pkg").style.display = "block";
+                            document.getElementById("all-pkg").style.display = "none";
+                            document.getElementById("add-cat").style.display = "none";
+                            document.getElementById("all-cat").style.display = "none";
+                        }
+                        function allpkg() {
+                            document.getElementById("add-pkg").style.display = "none";
+                            document.getElementById("all-pkg").style.display = "block";
+                            document.getElementById("add-cat").style.display = "none";
+                            document.getElementById("all-cat").style.display = "none";
+                        }
+                        function allcat() {
+                            document.getElementById("add-pkg").style.display = "none";
+                            document.getElementById("all-pkg").style.display = "none";
+                            document.getElementById("add-cat").style.display = "none";
+                            document.getElementById("all-cat").style.display = "block";
+                        }
+                        function addcat() {
+                            document.getElementById("add-pkg").style.display = "none";
+                            document.getElementById("all-pkg").style.display = "none";
+                            document.getElementById("add-cat").style.display = "block";
+                            document.getElementById("all-cat").style.display = "none";
+                        }
+                    </script>
+                    
+                    <div class="admin-btn">
+                        <span id="allpkg"> <button class="btn btn-success" onclick="allpkg()">Packages List</button></span>
+                        <span id="addpkg"> <button class="btn btn-success" onclick="addpkg()">Add Package</button></span>
+                        <span id="allcat"> <button class="btn btn-success" onclick="allcat()">Category List</button></span>
+                        <span id="addcat"> <button class="btn btn-success" onclick="addcat()">Add Category</button></span>
+                    </div>
+                    <div id="add-pkg" class="p-3 m-3">
+                        
+                        <!-- action="" method="post" class="row justify-content-center" -->
+                            <form action="" method="post" class="row justify-content-center">
+                                <div class="col-lg-6 p-2 text-center">
+                                    <strong>Enter Package Name :</strong>
+                                    <input type="text" name="pkgname" id="pkgname" class="form-control" required>
+                                </div>
+                                <div class="col-lg-6 p-2 text-center">
+                                    <strong>Feature Image :</strong>
+                                    <input type="file" name="fileToUpload" id="fileToUpload" class="btn btn-success form-control" required>
+                                </div>
+                                <div class="col-lg-3 p-2 text-center">
+                                    <strong>Date :</strong>
+                                    <input type="text" name="pkgdate" id="pkgdate" class="form-control" required>
+                                </div>
+                                <div class="col-lg-3 p-2 text-center">
+                                    <strong>Date :</strong>
+                                    <input type="date" id="datepicker" name="date" placeholder="Date" class="form-control">
+                                </div>
+                                <div class="col-lg-3 p-2 text-center">
+                                    <strong>Days :</strong>
+                                    <input type="text" name="pkgdays" id="pkgdays" class="form-control" required>
+                                </div>
+                                <div class="col-lg-6 p-2 text-center">
+                                    <strong>Video :</strong>
+                                    <input type="file" name="videoToUpload" id="videoToUpload" class="form-control" required>
+                                </div>
+                                <div class="col-lg-6 p-2 text-center">
+                                    <strong>Duration :</strong>
+                                    <input type="text" name="duration" id="dura" class="form-control" required>
+                                </div>
+                                <div class="col-lg-3 p-2 text-center">
+                                    <strong>Minimum price :</strong>
+                                    <input type="text" name="minPrice" id="minPrice" class="form-control" required>
+                                </div>
+                                <div class="col-lg-3 p-2 text-center">
+                                    <strong>Maximum price :</strong>
+                                    <input type="text" name="maxPrice" id="maxPrice" class="form-control" required>
+                                </div>
+                                <div class="col-lg-6 p-2 text-center">
+                                    <strong>Pickup :</strong>
+                                    <input type="text" name="pickup" id="pickup" class="form-control" required>
+                                </div>
+                                <div class="col-lg-6 p-2 text-center">
+                                    <strong>Drop Location :</strong>
+                                    <input type="text" name="dropLoc" id="dropLoc" class="form-control" required>
+                                </div>
+                                <div class="col-lg-6 p-2 text-center">
+                                    <strong>Itenary :</strong>
+                                    <input type="text" name="itenary" id="itenary" class="form-control" required>
+                                </div>
+                                <div class="col-lg-6 p-2 text-center">
+                                    <strong>Other Info :</strong>
+                                    <input type="text" name="otherInfo" id="otherInfo" class="form-control" required>
+                                </div>
+                                <div class="col-lg-12 p-2 text-center">
+                                    <strong>Discription :</strong>
+                                    <textarea class="form-control" name="discription" id="desc" rows="20" required></textarea>
+                                </div>
+                                <div class="col-lg-11 p-2 text-center">
+                                    <strong>Short Discription :</strong>
+                                    <textarea class="form-control" name="shortdiscription" id="shrtdesc" rows="3" required></textarea>
+                                </div>
+                                
+                                
+                                <div class="p-2 text-center ">
+                                    <select name="location" id="location" class="btn btn-success">
+                                        <option value="" selected="selected">Location</option>
+                                        <option value="1">Thailand</option>
+                                        <option value="2">Bali</option>
+                                        <option value="3">Mauritius</option>
+                                        <option value="4">Maldives</option>
+                                        <option value="5">Dubai</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <button type="submit" value="Submit" name="submit" class="btn btn-primary m-2">Submit</button>
+                                </div>
+                            </form>
+                    </div>
+                    
+                    <div id="all-pkg" class="mt-3 p-3 overflow-auto">
+                        <h2>All Packages</h2>
+                        <table width="100%">
+                            <tr class="">
+                                <th>Name</th>
+                                <th>Image</th>
+                                <th>Price</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                            <?php while($package_row_data = $package_row->fetch_assoc()) { ?>
+                            <tr class="border-light border-bottom mb-5">
+                                <td class="m-2">
+                                   <!-- <p class="m-2">Aditya</p>  -->
+                                   <p class="m-2"><?php print $package_row_data['name']; ?></p> 
+                                </td>
+                                <td class="m-2 tbLimg">
+                                    <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" class="img-fluid p-2" alt="" />
+                                    <!-- <img src="img/thailand/bangkok.jpg" class="img-fluid p-2" alt=""> -->
+                                </td>
+                                <td class="m-2">
+                                   <!-- <p class="m-2">600000</p>  -->
+                                   <p class="m-2"><?php print $package_row_data['max_price']; ?></p> 
+                                </td>
+                                <td class="m-1"><a href="" class="btn btn-success m-1"> Edit</a></td>
+                                <td class="m-1"><a href="" class="btn btn-danger m-1"> Delete</a></td>
+                            </tr>
+                            <?php } ?>
+                        </table>
+                    </div>
+
+                    <div id="all-cat" class="mt-3 p-3 overflow-auto">
+                        <h2>Categort List</h2>
+                        <table width="100%">
+                            <tr class="">
+                                <th>Category Name</th>
+                                <th>Parent Category</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                            <?php while($package_row_data = $package_row->fetch_assoc()) { ?>
+                            <tr class="border-light border-bottom mb-5">
+                                <td class="m-2">                                    
+                                   <p class="m-2"><?php print $package_row_data['name']; ?></p> 
+                                </td>
+                                <td class="m-2 tbLimg">
+                                    <img src="packageimg/<?php print $package_row_data['feature_image']; ?>" class="img-fluid p-2" alt="">
+                                    <!-- <img src="img/thailand/bangkok.jpg" class="img-fluid p-2" alt=""> -->
+
+                                </td>                
+                                <td class="m-1"><a href="" class="btn btn-success m-1"> Edit</a></td>
+                                <td class="m-1"><a href="" class="btn btn-danger m-1"> Delete</a></td>
+                            </tr>
+                            <?php } ?>
+                        </table>
+                    </div>
+
+
+                    <div id="add-cat" class="p-3 m-3">
+                        <form action="#" method="post" enctype="multipart/form-data" class="row justify-content-center">
+                            
+                            <div class="col-lg-5 p-2 text-center">
+                                <strong>Enter Category Name :</strong> <br />
+                                <input type="text" name="catname" id="catname" class="form-control" required>
+                            </div>                           
+                            <div class="p-2 text-center ">
+                            <strong>Select Parent Category :</strong>
+                                <select name="location" id="location" class="btn btn-success">
+                                    <option value="" selected="selected">None</option>
+                                    <option value="1">Thailand</option>
+                                    <option value="2">Bali</option>
+                                    <option value="3">Mauritius</option>
+                                    <option value="4">Maldives</option>
+                                    <option value="5">Dubai</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <button type="submit" value="Submit" name="cat" class="btn btn-primary m-2">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--\\\\\\\\\\\\\\\\\\\\\ section-1 end  ///////////////////////// */ -->
+
+
+
+
+
+
+    <!-- back to top button -->
+    <div class="container-fluid button-div d-none">
+        <a href="#" id="btt" class="position-fixed bottom-0 start-0">
+            <!-- <i class="fa-solid fa-angle-up text-center"></i> -->
+            <img class="fa-angle-up" src="img/whatsapp.png" alt="">
+
+
+        </a>
+    </div>
+
+
+    <script>
+        $(function () {
+            var btt = $('.button-div');
+            $(window).scroll(function () {
+                if ($(window).scrollTop() <= 700) {
+                    btt.removeClass('btt-btn');
+                    btt.addClass('d-none')
+                }
+                else {
+                    btt.addClass('btt-btn');
+                    btt.removeClass('d-none')
+                }
+            });
+        });
+    </script>
+    <!-- end back to top button  -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: false,
+            rewind: true,
+            //autoplay: {
+            // delay: 2500,
+            //disableOnInteraction: false,
+            //},
+            loopFillGroupWithBlank: true,
+            //pagination: {
+            //el: ".swiper-pagination",
+            //clickable: true
+            //},
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                330: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                666: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1029: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
+
+    <!-- end swiper \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <!-- \\\\\\\\\\\\\\\\\ javascript \\\\\\\\\\\\\\\\ -->
+    <!-- hero typing effect -->
+    <div class="container">
+        <style>
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+        <script>
+            $('#typed').typing();
+            $("#typed2").typing({
+                strings: ['Spreading happiness', 'Connecting People', 'Creating Memories', 'Creating Stories', 'Fullfilling Adventure'],
+                eraseDelay: 60,
+                typeDelay: 80,
+                stringStartDelay: 1000,
+                color: 'white',
+                typingColor: 'white',
+                typingOpacity: '1',
+                loopCount: 100,
+                cursorBlink: true,
+                cursorChar: '<small>|</small>',
+                fade: false,
+                onTyping: function () {
+                    console.log('onTyping');
+                },
+                onFinishedTyping: function () {
+                    console.log('onFinishedTyping');
+                },
+                onErasing: function () {
+                    console.log('onErasing');
+                },
+                onFinishedErasing: function () {
+                    console.log('onFinishedErasing');
+                },
+                onAllTypingCompleted: function () {
+                    console.log('onAllTypingCompleted');
+                },
+                onFinishedFadeErasing: function () {
+                    console.log('onFinishedFadeErasing');
+                }
+            });
+        </script>
+    </div>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+
+</body>
+
+</html>

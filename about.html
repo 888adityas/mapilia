@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- nav-links fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- typing effect -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="typingEffect.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper.css">
+
+
+
+    <title>Mapilia - Travel Vacations ...!!!</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-logo.png">
+</head>
+
+<body>
+    <!-- section - 1  -->
+    <section>
+        <div class="container-fluid about-bg">
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0 ms-3 me-lg-0 ms-lg-5 border border-0">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" title="HOME"></a>
+                    <a class="nav-link me-lg-5 pe-lg-5 pe-sm-2 me-sm-2 text-white" href="#"
+                        style="font-size:14px;font-weight:500;"><i class="fa-solid fa-phone"
+                            style="font-size:14px;"></i>
+                        +91-9870301533 </a>
+
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"
+                        aria-label="Toggle navigation">
+                        <span class=""><i class="fa-solid fa-bars"></i></span>
+                    </button>
+
+                    <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+                        aria-labelledby="offcanvasResponsiveLabel">
+                        <div class="offcanvas-header">
+                            <!-- <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5> -->
+
+
+                            <a class="nav-link list-link" aria-current="page" title="Admin Panel" href="admin.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg>
+                            </a>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav list me-auto ms-lg-5 ms-md-5 mb-2 mb-lg-0">
+                                <li class="nav-item list-link">
+                                    <a class="nav-link" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item list-link dropdown">
+                                    <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        TRIPS
+                                    </a>
+                                    <ul class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="thailand.html">THAILAND</a></li>
+                                        <li><a class="dropdown-item" href="#">BALI</a></li>
+                                        <li><a class="dropdown-item" href="#">MAURITIUS</a></li>
+                                        <li><a class="dropdown-item" href="#">MALDIVES</a></li>
+                                        <li><a class="dropdown-item" href="#">DUBAI</a></li>
+                                        <!-- <li>
+                                                                        <hr class="dropdown-divider">
+                                                                    </li> -->
+                                    </ul>
+                                </li>
+                               
+                                <li class="nav-item ">
+                                    <a class="nav-link list-link" href="about.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link list-link" href="contact.html">CONTACT US</a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link list-link" aria-current="page" title="Admin Panel"
+                                        href="admin.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <center class="mt-5 d-lg-none">
+                                <p>we are social</p>
+                                <a href="" class="mx-2"><img src="img/facebook32.png" alt=""></a>
+                                <a href="" class="mx-2"><img src="img/instagram32.png" alt=""></a>
+
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end  -->
+            <!-- India's Coolest Travel Community -->
+            <!-- GrandParent container -->
+            <div class="container-fluid hero-setion1">
+                <!-- Parent conatiner total - 3 -->
+                <div class="parent1 pt-4 mt-5 text-center d-flex justify-content-center flex-column">
+                    <h1 class="text-white pt-5" style="text-shadow: 10px 10px 5px black;">ABOUT US</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--\\\\\\\\\\\\\\\\\\\\\ section-1 end  ///////////////////////// */ -->
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    section-2  What do we stand for and how did we reach to it?
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <div class="mapilia-bg">
+        <section>
+            <div class="container d-flex text-center flex-column p-3 we-stand-for">
+                <h5 class="d-inline-block" style="font-weight: bold;font-family: 'Aboreto', cursive;">What do we stand
+                    for and how did we reach to it?</h5>
+                <p style="text-align: justify;" class="pt-3">Remember the days when we used to fill our slam-books with
+                    career aspirations like scientist, teacher and doctor? Nobody
+                    at that time thought there could’ve been a career in Travelling, let alone being a travelpreneur!
+                    But as life happens,
+                    you understand that a career could be anything where you can be a problem-solver for the society.
+                    And that’s how a few engineers from NIT Kurukshetra found that the travel industry in India needed a
+                    fresh burst of
+                    young energy! The need of the hour was to convert a dispersed agent based model to a more friendly
+                    ,transparent and an
+                    accessible community for Indian travellers, and hence Mapilia. Let’s have a closer look at the
+                    hustlers who’re on a
+                    mission to stir up people’s life with memorable experiences.</p>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-auto d-flex justify-content-center">
+                <div class="col-auto col-md-5">
+                    <div class="d-flex align-items-center">
+                        <img class="p-2" src="img/mission.png" alt="">
+                        <h1>Our Mission</h1>
+                    </div>
+                    <p>
+                        Through travel, we connect people to positive experiences enabling them to see the world
+                        differently.
+                        “Travel is the main thing you purchase that makes you more extravagant”. We, at <b>Mapilia</b>,
+                        swear by this and
+                        put stock in satisfying travel dreams that make you perpetually rich constantly.
+                    </p>
+                </div>
+
+                <div class="col-auto col-md-5">
+                    <div class="d-flex align-items-center">
+                        <img class="p-2" src="img/vision.png" alt="">
+                        <h1>Our vision</h1>
+                    </div>
+                    <p>
+                        We have been moving excellent encounters for a considerable length of time through our
+                        cutting-edge planned occasion
+                        bundles and other fundamental travel administrations. We rouse our clients to carry on with a
+                        rich life, brimming with
+                        extraordinary travel encounters.
+                    </p>
+
+                </div>
+            </div>
+            <center>
+                <div class="orangeLine mb-3"></div>
+            </center>
+        </section>
+        
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        section 5  Our WARRIORS who have helped us build this holistic community
+        \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\\\\\-->
+        <section>
+            <div class=" pt-2 pb-3 ps-lg-5 pe-lg-5">
+                <center>
+                    <h5 class="text-center pb-2" style="font-weight: bolder;color:var(--primary-color);">
+                        Our WARRIORS who have helped us build this holistic community</h5>
+                </center>
+                <div class="swiper mySwiper">
+
+                    <div class="swiper-wrapper d-flex justify-content-between ">
+                        <!-- (person 1) -->
+                        <div class="swiper-slide text-center child1 ch-1  d-flex ">
+                            <img src="img/captain.png" alt="">
+                            <h4 style="font-weight: 600;">Trip Captains</h4>
+
+                            <!-- <div class="borderGreen"></div> -->
+                            <p class="" style="font-size:14px;text-align:justify;line-height:0px;">
+                                Our trip captains are nothing short of heroes. Brave, dynamic, and great leaders,
+                                they’re certainly the showrunners of
+                                the community trips. They’ve been handpicked from India’s best travel institutes, and
+                                know all tricks of trade to lead
+                                and manage all kinds of trips, including biking and trekking expeditions.
+                            </p>
+                            <div class="orangeLine mb-3"></div>
+
+                        </div>
+                        <!-- (person 2) -->
+                        <div class="swiper-slide text-center child1 ch-1  ">
+                            <img src="img/handshake.png" alt="">
+                            <h4 style="font-weight: 600;">Local Vendors</h4>
+
+                            <!-- <div class="borderGreen"></div> -->
+                            <p class="" style="font-size:14px;text-align:justify;line-height:0px;">
+                                Being the bridge between the local vendors and the customers, we’re very selective about
+                                the former. After a rigorous
+                                recci, we’ve found the most kind and hospitable vendors, who make our travelers feel at
+                                home, even when they might be
+                                miles away from it. Over the period of time, we’ve managed to make a family-like
+                                relationship with our vendors, thus
+                                giving back to the local community in every way possible!
+                            </p>
+                            <div class="orangeLine mb-3"></div>
+
+                        </div>
+                        <!-- (person 3) -->
+                        <div class="swiper-slide text-center child1 ch-1  ">
+                            <img src="img/transport.png" alt="">
+                            <h4 style="font-weight: 600;">Transport Drivers</h4>
+
+                            <!-- <div class="borderGreen"></div> -->
+                            <p class="" style="font-size:14px;text-align:justify;line-height:.5px;">
+                                We understand the responsibility of taking utmost care of our travelers when they’re off
+                                to experience the toughest
+                                terrains of the country. Hence everything depends on the competency of our drivers. All
+                                the drivers at WanderOn are
+                                local professionals, who’ve been in practice since years, and we assure that they know
+                                all nooks and corners of the
+                                roads by heart!
+                            </p>
+                            <div class="orangeLine mb-3"></div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-button-next" style="
+                    border-radius: 50%;
+                    background-color: none;
+                    padding: 0rem;
+                    margin-top: -10vh;
+                    box-shadow: none;
+                    color:black;
+                    ">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="swiper-button-prev" style="
+                    border-radius: 50%;
+                    background-color: none;
+                    padding: 0rem;
+                    margin-top: -10vh;
+                    box-shadow: none;
+                    color:black;
+                    ">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+    </div>
+    </section>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+            section 6 BRANDS who trust us
+            \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\\\\\-->
+    <!-- <section>
+        <div class="container pt-2 pb-3 ps-lg-5 pe-lg-5">
+        <center>
+            <h4 class="text-center pb-2" style="font-weight: bolder;">
+                BRANDS who trust us
+            </h4>
+        </center>
+        <div class="d-flex">
+            <div class="d-flex justify-content-center align-items-center flex-column brands">
+             <img src="https://www.wanderon.in/about-us/tvs.png" alt="">
+                <h6>TVS</h6>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="d-flex justify-content-center align-items-center flex-column brands">
+             <img src="https://www.wanderon.in/about-us/concentrix.svg" alt="">
+                <h6>Concentrix</h6>
+            </div>
+        </div>
+
+        </div>
+        </section> -->
+
+    <!-- Hand over all your \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <section>
+        <div class="container-fluid dark-bg p-4">
+            <div class="container-fluid bg-white1">
+                <div class="parent11 d-flex justify-content-around align-items-center">
+                    <div class="mychild1 w-50">
+                        <h3>Hand over all your requirements to our travel experts who've curated more than 200
+                            itineraries.
+                            </h1>
+
+                            <!-- <button type="button" class="btn btn-secondary mt-3">TALK TO OUR EXPERT</button> -->
+                            <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">TALK
+                                TO
+                                OUR EXPERT</button>
+
+
+                            <div class="offcanvas offcanvas-bottom d-flex align-items-center justify-content-center"
+                                data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                                aria-labelledby="offcanvasWithBothOptionsLabel">
+                                <div class="myOffCanvasBottom">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel"> </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 text-center p-2">
+                                                <h3 style="font-weight:bold;">Not sure what to do? We'll give you
+                                                    a<span style="color: var(--primary-color);"> call back</span>
+                                                </h3>
+                                                <form action="" id="homeForm2">
+                                                    <div class="mb-3">
+                                                        <input type="text" name="name" class="form-control"
+                                                            id="exampleFormControlInput1" placeholder="Name" required>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="number" name="phone" class="form-control"
+                                                            id="exampleFormControlInput1" placeholder="Phone Number"
+                                                            required>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="email" name="email" class="form-control"
+                                                            id="exampleFormControlInput1" placeholder="Email" required>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <textarea type="text" name="message" class="form-control"
+                                                            id="exampleFormControlTextarea1" rows="3"
+                                                            placeholder="Message" required></textarea>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success">SUBMIT</button>
+                                                </form>
+                                            </div>
+                                            <div class="col-lg-6 text-center p-2">
+                                                <h3 style="font-weight:bold;"><span
+                                                        style="color: var(--primary-color);">Don't hesitate, fill
+                                                        your
+                                                        details!!
+                                                        Why?</span></h3>
+                                                <div class="row text-center m-auto pt-5">
+                                                    <div class="col">
+                                                        <img class="w-25"
+                                                            src="https://www.wanderon.in/popup/experts.svg" alt="">
+                                                        <p>Free Consultation by Experts</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <img class="w-25"
+                                                            src="https://www.wanderon.in/popup/no-spam.svg" alt="">
+                                                        <p>No Spam Calls/No Data Sharing</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <img class="w-25"
+                                                            src="https://www.wanderon.in/popup/direction.svg" alt="">
+                                                        <p>Only Authentic Destination</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <p class="mt-2">P.S.- We love talking about travel 24*7</p>
+                    </div>
+                    <div class="mychild1 w-25">
+                        <img class="img-fluid" src="img/sammy-line-man-in-a-tie-talking-on-the-phone.png" alt="">
+                        <!-- <img class="img-fluid" src="https://www.wanderon.in/svg/home/cta-image.svg" alt=""> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end Hand over all your \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+    FOOTER 1  grey
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <section>
+        <div class="container-fluid footer1 padding-0">
+            <div class="row p-4 padding-0 ms-0">
+                <!-- part-1 -->
+                <div class=" col-sm-12 col-lg-4 BorderRRight p-lg-3 ps-lg-5 padding-0">
+                    <p class="text-white">About Us</p>
+                    <p class="text-secondary">We at Mapilia are a modern travel community that provides end to end
+                        travel packages in India and abroad. We design the
+                        best travel itineraries that encourage group traveling for like-minded people. Our services
+                        include road trips, trekking
+                        expeditions, corporate trips, and customized tour packages. On our trips, we ensure hassle-free
+                        traveling, top-notch
+                        accommodation and guided sightseeing that too in a budget that won’t burn a hole in your pocket.
+                        Just give us your dates
+                        and be ready to experience traveling like never before.</p>
+                </div>
+                <!-- part-2 -->
+                <div class="col BorderRRight p-lg-3 padding-0">
+                    <ul>
+                        <p class="text-white">Similar Trips</p>
+                        <li><a class="text-secondary foot-link" href="">Bir Billing</a></li>
+                        <li><a class="text-secondary foot-link" href="">Chopta Tungnath</a></li>
+                        <li><a class="text-secondary foot-link" href="">Kasol Kheerganga</a></li>
+                        <li><a class="text-secondary foot-link" href="">Tirthan Valley</a></li>
+                        <li><a class="text-secondary foot-link" href="">Manali Solang</a></li>
+                        <li><a class="text-secondary foot-link" href="">Kasol Manali</a></li>
+                        <li><a class="text-secondary foot-link" href="">Parvati Valley</a></li>
+                        <li><a class="text-secondary foot-link" href="">Bir Kasol</a></li>
+                        <li><a class="text-secondary foot-link" href="">Mcleod Bir Tirthan</a></li>
+                        <li><a class="text-secondary foot-link" href="">Mcleod Bir Barot</a></li>
+                    </ul>
+                </div>
+                <!-- part-3 -->
+                <div class="col BorderRRight p-lg-3 padding-0">
+                    <ul>
+                        <p class="text-white">Our Popular Trips</p>
+                        <li><a class="text-secondary foot-link" href="">Himachal Backpacking</a></li>
+                        <li><a class="text-secondary foot-link" href="">Spiti Valley Trips</a></li>
+                        <li><a class="text-secondary foot-link" href="">Ladakh Trips</a></li>
+                        <li><a class="text-secondary foot-link" href="">Meghalaya Backpacking</a></li>
+                        <li><a class="text-secondary foot-link" href="">Kashmir Backpacking</a></li>
+                    </ul>
+                    <br>
+
+                </div>
+                <!-- part-4 -->
+                <div class="col-lg-3 col-sm-2 p-lg-3 padding-0 margin-Top">
+                    <ul>
+                        <h4 class="text-white">Quick Links</h4><br>
+                        <li><a class="text-white foot-link" href="">Privacy Policy</a></li>
+                        <li><a class="text-white  foot-link" href="">Cancellation Policy</a></li>
+                        <li><a class="text-white  foot-link" href="">Terms & Conditions</a></li>
+                        <li><a class="text-white  foot-link" href="">Disclaimer</a></li>
+                        <li><a class="text-white  foot-link" href="">About Us</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+    FOOTER 2  white
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <section>
+        <div class="d-flex justify-content-center pt-3">
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/facebook.svg" alt="">
+            </div>
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/instagram.svg" alt="">
+            </div>
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/pinterest.svg" alt="">
+            </div>
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/linkedin.svg" alt="">
+            </div>
+            <div class="social">
+                <img src="https://www.wanderon.in/svg/footer/youtube.svg" alt="">
+            </div>
+        </div>
+        <div class="text-center">
+            <p style="font-weight: bold;">ADDRESS</p>
+            <p>MAPILIA VACATIONS</p>
+            <p>3rd Floor, Building No-750, Phase V, Udyog Vihar, Sector-19, Gurugram, Haryana-122022</p>
+        </div>
+        <div class="d-flex justify-content-around pb-4 text-center con">
+            <h6 style="font-weight: bold;">hello@mapilia.in</h6>
+            <h6 style="font-weight: bold;">+91-9870301533</h6>
+            <h6 style="font-weight: bold;">www.mapilia.in</h6>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- back to top button -->
+    <div class="container-fluid button-div d-none">
+        <a href="#" id="btt" class="position-fixed bottom-0 end-0">
+            <!-- <i class="fa-solid fa-angle-up text-center"></i> -->
+            <img class="fa-angle-up" src="img/whatsapp.png" alt="">
+
+
+        </a>
+    </div>
+
+
+    <script>
+        $(function () {
+            var btt = $('.button-div');
+            $(window).scroll(function () {
+                if ($(window).scrollTop() <= 700) {
+                    btt.removeClass('btt-btn');
+                    btt.addClass('d-none')
+                }
+                else {
+                    btt.addClass('btt-btn');
+                    btt.removeClass('d-none')
+                }
+            });
+        });
+    </script>
+    <!-- end back to top button  -->
+    <!-- On scroll Navbar class add -->
+    <script>
+        // navbar
+        $(function () {
+            var navbar = $('.navbar-expand-lg');
+            $(window).scroll(function () {
+                if ($(window).scrollTop() <= 200) {
+                    navbar.removeClass('navbar-scroll');
+                }
+                else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: false,
+            rewind: true,
+            //autoplay: {
+            // delay: 2500,
+            //disableOnInteraction: false,
+            //},
+            loopFillGroupWithBlank: true,
+            //pagination: {
+            //el: ".swiper-pagination",
+            //clickable: true
+            //},
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                330: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                666: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1029: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
+
+    <!-- end swiper \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <!-- \\\\\\\\\\\\\\\\\ javascript \\\\\\\\\\\\\\\\ -->
+    <!-- hero typing effect -->
+    <div class="container">
+        <style>
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+        <script>
+            $('#typed').typing();
+            $("#typed2").typing({
+                strings: ['Spreading happiness', 'Connecting People', 'Creating Memories', 'Creating Stories', 'Fullfilling Adventure'],
+                eraseDelay: 60,
+                typeDelay: 80,
+                stringStartDelay: 1000,
+                color: 'white',
+                typingColor: 'white',
+                typingOpacity: '1',
+                loopCount: 100,
+                cursorBlink: true,
+                cursorChar: '<small>|</small>',
+                fade: false,
+                onTyping: function () {
+                    console.log('onTyping');
+                },
+                onFinishedTyping: function () {
+                    console.log('onFinishedTyping');
+                },
+                onErasing: function () {
+                    console.log('onErasing');
+                },
+                onFinishedErasing: function () {
+                    console.log('onFinishedErasing');
+                },
+                onAllTypingCompleted: function () {
+                    console.log('onAllTypingCompleted');
+                },
+                onFinishedFadeErasing: function () {
+                    console.log('onFinishedFadeErasing');
+                }
+            });
+        </script>
+    </div>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+
+</body>
+
+</html>

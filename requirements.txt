@@ -1,0 +1,24 @@
+* contact number 
+* full Address
+* Company full name - mapilia vacations
+* Email
+* Social media if have any
+	.facebook
+	.instagram
+	.pinterest
+	.LinkedIn
+	.Youtube
+* Details of Team members
+	.photo
+	.position (ex. CEO founder,head of operations, head of marketing)
+	.member social media handle if have any (linkedIn, Instagram)
+	.some info about them/there work .
+
+
+As of now I will start with  
+Thailand,   Bali ,  Mauritius , Maldives,  Dubai
+
+For Each  I will launch 8 to 10 Packages.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8qyhpVsSqyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_eduXD1jQ7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AxFQY6qcOrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

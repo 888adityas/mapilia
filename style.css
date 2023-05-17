@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.row{
+  margin: 0;
+}
+html {
+  /* font-size: 100%; */
+  
+}
+
+:root {
+  --primary-color: #0a9e88;
+}
+
+body {
+  /* font-family: Montserrat, sans-serif; */
+  background-color: #fafafa;
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Aboreto', cursive; */
+}
+
+a {
+  text-decoration: none;
+  font-style: none;
+}
+
+ul {
+  list-style: none;
+}
+.backdrop{
+  backdrop-filter: blur(4px);
+}
+.btn-orange{
+  background-color: orangered;
+  color: white;
+}
+.btn-orange:hover{
+  background-color: white;
+  color: orangered;
+  border: 1px solid orangered;
+}
+.bg-lightGrey{
+  background-color: rgba(128, 128, 128, 0.062);
+}
+.orangeLine{
+  width: 6rem;
+  height: 3px;
+  /* background-color: palegreen; */
+  background-color: var(--primary-color);
+}
+.bg-primaryGreen{
+  background-color:var(--primary-color);
+}
+/* @media only screen and (max-width:998px){
+    html{
+        font-size: 55%;
+    }
+} */
+/* @media only screen and (max-width:768px){
+    html{
+        font-size: 45%;
+    }
+} */
+/* @media only screen and (max-width:576px){
+    html{
+        font-size: 35%;
+    }
+} */
+/* @media only screen and (max-width:300px){
+    html{
+        font-size: 25%;
+    }
+} */
+
+/* line efect */
+.list .list-link {
+  position: relative;
+}
+
+.list .list-link::after {
+  content: "";
+  position: absolute;
+  /* left: 100%; */
+  right: 100%;
+  bottom: 0%;
+  width: 0%;
+  height: 0.2rem;
+  background: white;
+  transition: 0.15s ease-out;
+}
+
+.list .list-link:hover::after {
+  left: 0%;
+  right: 0%;
+  width: 100%;
+}
+
+/* navbar onscroll */
+@media only screen and (min-width: 991px) {
+  .navbar-scroll {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1021;
+    width: 100% !important;
+    height: 3.5rem;
+    margin-left: -1rem !important;
+    margin-top: -3rem !important;
+    padding-right: 1rem;
+    /* transition: .4s all ease-in; */
+    backdrop-filter: blur(8px);
+    /* transform: rotate(1turn); */
+  }
+    .navbar {
+      backdrop-filter: blur(4px);
+    }
+
+}
+
+/* back to top button */
+.btt-btn .fa-angle-up {
+  color: black;
+  width: 4.5rem;
+  padding: 0.5rem;
+  margin: 2rem;
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.363);
+  z-index: 2;
+}
+
+.btt-btn .fa-angle-up:hover {
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.363);
+  border: none;
+}
+
+
+.packages {
+  transition: 0.3s all ease;
+}
+
+.packages:hover {
+  /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.274); */
+  cursor: pointer;
+  transform: scale(1.03) !important;
+}
+
+.offcanvas-bottom {
+  width: 80%;
+  height: 85vh !important;
+  margin-bottom: 6vh !important;
+  margin: auto;
+  padding: 1rem;
+}
+
+.myOffCanvasBottom {
+  border: 1px dashed var(--primary-color) !important;
+  border-radius: 10px 10px;
+}
+
+.btn-close {
+  background-color: var(--primary-color) !important;
+  border-radius: 50% !important;
+}
+
+/* ========================================== */
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    MAIN WORK
+////////////////////////////////// */
+/* section -1  */
+.hero-bg {
+  background: rgba(0, 0, 0, 0.65) url(img/hero-bg/island21.jpg);
+  /* height: 102vh; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  /* background-attachment: fixed; */
+  /* margin-top: -.5rem !important; */
+  padding-top: 0;
+}
+
+.navbar {
+  margin-top: -0.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.navbar-brand img {
+  width: 4rem;
+  margin-left: -1rem;
+  /* margin-top: .5rem; */
+}
+
+/* hero search bar */
+.hero-srchBar form {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+.hero-srchBar form input {
+  background: rgba(255, 255, 255, 0.3);
+  height: 3rem;
+}
+
+.hero-srchBar form input::placeholder {
+  color: white;
+}
+.hero-srchBar form ul{
+  width: 100% !important;
+
+}
+
+.hero-setion1 .parent1 h1 {
+  font-size:2.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+
+.hero-setion1 .parent2 .child1 {
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-setion1 .parent2 .child1 p {
+  /* font-weight: 300; */
+  /* line-height: 1px; */
+  font-size: 100%;
+  color: lightgrey;
+}
+
+.hero-setion1 .parent2 .child1 img {
+  width: 3.5rem;
+}
+
+/* toggler button appears */
+@media only screen and (max-width: 993px) {
+  .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    padding: 5vw;
+  }
+    /* .hero-bg {
+      height: 70vh; 
+    } */
+
+  .fa-bars {
+    border: 0;
+  }
+
+  .navbar-toggler {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 339px) {
+  .navbar-brand {
+    margin-left: -5px !important;
+  }
+}
+
+/* off canvas half size */
+@media only screen and (max-width: 685px) {
+  #offcanvasResponsive {
+    width: 60%;
+  }
+}
+
+/* mobile view  */
+@media only screen and (max-width: 600px) {
+  .hero-setion1 .parent1 {
+    margin-top: 15vh !important;
+  }
+  .hero-setion1 .parent2 {
+    justify-content: space-between !important;
+    margin-top: 15vh;
+  }
+  .hero-setion1 .parent1 h1 {
+    font-size: 1.2rem;
+  }
+  .hero-setion1 .parent2 .child1 p {
+    font-size: 0.6rem;
+  }
+  .hero-setion1 .parent2 .child1 img {
+    width: 1.5rem;
+  }
+}
+
+/* section-1 end ////////////////////////////////////////////////////////////////////////////////////// */
+
+/* section-2 start ////////////////////////////////////////////////////////////////////////////////////// */
+.explore .row .child1 img {
+  width: 4rem;
+}
+
+.explore .row .child1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  /* width: 13.7%; */
+  padding: 2rem;
+}
+
+.explore .row .child1 p {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: Montserrat, sans-serif;
+  line-height: 20px;
+  padding-top: 1rem;
+}
+
+/* mobile view  */
+@media only screen and (max-width: 973px) {
+  .explore .row .child1 {
+    /* padding: 2vw; */
+    /* margin:2vw; */
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 30%;
+  }
+
+  .explore .row {
+    flex-direction: row;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .col-xs-4 {
+    width: 27%;
+  }
+
+  .explore .row .child1 p {
+    font-size: 10px;
+  }
+
+  .explore .row .child1 img {
+    width: 2rem;
+  }
+
+  .BorderRight {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .BorderTop {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* section-3 carousel1 start ////////////////////////////////////////////////////////////////////////////// */
+.swiper-wrapper .child1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.swiper-wrapper .child1 p {
+  font-size: 15px;
+  /* font-family: Montserrat, sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 0.5rem;
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 985px) {
+  .swiper-wrapper .child1 {
+    text-align: start;
+  }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\
+ dark blue background 
+ \\\\\\\\\\\\\\\\\\\\\\\*/
+.dark-bg {
+  background-image: url(https://www.wanderon.in/svg/home/cta.svg);
+  /* background-color: #13243F; */
+}
+
+.bg-white1 {
+  background-color: white;
+  border-radius: 20px 20px;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.dark-bg .parent11 .mychild1 img {
+  width: 20rem;
+  /* min-width: 6rem; */
+}
+
+.dark-bg .parent11 .mychild1 p,
+.dark-bg .parent11 .mychild1 button {
+  font-size: 1.4vw;
+}
+
+.dark-bg .parent11 .mychild1 h3 {
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+.mychild1 .btn-secondary {
+  background-color: #13243f;
+}
+
+@media only screen and (max-width: 575px) {
+  .p-xs {
+    padding: 5vw;
+  }
+
+  .dark-bg .parent11 {
+    flex-direction: row-reverse;
+  }
+
+  .bg-white1 {
+    padding: 1rem;
+    padding-bottom: 0em;
+  }
+
+  .mychild1 {
+    width: 50% !important;
+    padding: 0.4rem;
+  }
+
+  .dark-bg .parent11 .mychild1 p,
+  .dark-bg .parent11 .mychild1 button {
+    font-size: 1.8vw;
+  }
+
+  .dark-bg .parent11 .mychild1 h3 {
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
+
+  .bg-white1 {
+    max-width: 90%;
+    padding-top: 1rem;
+  }
+}
+
+/*\\\\\\\\\\\\\\\\\\\
+CUSTOMISE YOUR TRIP
+\\\\\\\\\\\\\\\\\\\\\ */
+.thailand {
+  background: url(img/weekendTrips/thailand.jpg);
+}
+
+.bali {
+  background: url(img/weekendTrips/bali.jpg);
+}
+
+.mauritius {
+  background: url(img/weekendTrips/mauritius.jpg);
+}
+
+.maldives {
+  background: url(img/weekendTrips/maldives.jpg);
+}
+
+.dubai {
+  background: url(img/weekendTrips/dubai.jpg);
+}
+
+.swiper-wrapper .child11 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  color: white;
+  /* width: 10rem !important; */
+  height: 20rem !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-wrapper .child11 p {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid white !important;
+  font-size: 1.5rem;
+  /* font-weight: 1000; */
+  padding: 20px 50%;
+  text-shadow: 0px 5px 5px black;
+  font-family: 'Aboreto', cursive !important;
+}
+#homeForm2 input{
+  background-color: #E4F4F9;
+  border: 0;
+
+}
+#homeForm2 label,
+#homeForm2 input::placeholder{
+  font-size: .8rem;
+}
+.homeForm2-bg{
+  background: rgba(0, 0, 0, 0.363) url(img/hero-bg/homeForm2-bg.jpg)center/cover no-repeat;
+}
+@media only screen and (max-width: 786px) {
+  .custUrTrp h5 {
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .swiper-wrapper .child11 {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+      color: white;
+      /* width: 10rem !important; */
+      height: 15rem !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .swiper-wrapper .child11 p {
+      background: rgba(0, 0, 0, 0.4);
+      border: 2px solid white !important;
+      font-size: 1.3rem;
+      /* font-weight: 1000; */
+      padding: 20px 50%;
+      text-shadow: 0px 5px 5px black;
+      font-family: 'Aboreto', cursive !important;
+    }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\
+Why Book With Mapilia?
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.ch-1 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  text-align: center !important;
+}
+
+.ch-1 img {
+  width: 5rem !important;
+  height: 5rem !important;
+  padding: 1rem;
+}
+
+.ch-1 p {
+  line-height: 20px !important;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\
+        TESTIMONIALS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.carousel-item iframe {
+  width: 50rem;
+  height: 25rem;
+}
+
+.testimo {
+  padding: 1vw 5vw 2vw 5vw;
+}
+
+@media only screen and (max-width: 831px) {
+  .carousel-item iframe {
+    padding: 2rem;
+    width: 25rem;
+  }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\
+     FOOTER 1 grey
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.footer1 {
+  background-color: rgb(58, 58, 58);
+}
+
+.footer1 p,
+.footer1 li {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.BorderRRight {
+  border-right: 2px solid white;
+}
+
+.foot-link:hover {
+  color: white !important;
+}
+
+@media only screen and (max-width: 437px) {
+  .BorderRRight {
+    border-right: none;
+  }
+
+  .padding-0 {
+    padding: 0;
+  }
+
+  .footer1 p,
+  .footer1 li {
+    font-size: 13px;
+    text-align: start;
+  }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\
+     FOOTER 2 white
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.social img {
+  width: 1rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  display: inline;
+  background-color: lightgrey;
+  padding: 0.4rem 0.6rem;
+  border-radius: 50% 50%;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 535px) {
+  .con {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                destination bg
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.destination-bg {
+  background: rgba(0, 0, 0, 0.5) url(img/backgrounds/thailand-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding-top: 0 !important;
+}
+@media only screen and (max-width:480px){
+  .destination-bg {
+    height: 68vh;
+  }
+
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\
+             about us
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.about-bg {
+  background: rgba(0, 0, 0, 0.411)
+    url(img/backgrounds/about-bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding-top: 0 !important;
+  height: 28rem;
+}
+.mapilia-bg{
+  background-image:url(img/backgrounds/mapilia-bg2.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.we-stand-for {
+  /* max-width: 60%; */
+}
+
+@media only screen and (max-width: 831px) {
+  .we-stand-for {
+    min-width: 100%;
+    padding: 1rem !important;
+  }
+}
+
+/* our team members*/
+.team {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  text-align: center !important;
+}
+
+.team img {
+  width: 12rem !important;
+  height: 12rem !important;
+  padding: 1rem;
+  border-radius: 50% !important;
+}
+
+.team p {
+  line-height: 20px !important;
+}
+
+.socialIcon {
+  padding: 0 !important;
+  margin-top: -10px !important;
+}
+
+.socialIcon img {
+  max-width: 2rem !important;
+  max-height: 2rem !important;
+  border-radius: 0 !important;
+  padding: 0.5rem;
+}
+
+.borderGreen {
+  border-top: 2px solid #0fc1a6;
+  width: 6rem;
+  height: 12px;
+}
+
+.card-body,
+.card {
+  padding: 0 !important;
+}
+
+/* section 4 */
+@media only screen and (max-width: 439px) {
+  .abtChild a {
+    font-size: 4vw !important;
+  }
+}
+
+/* section 5 */
+.brands img {
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                ADMIN PANEL
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* .admin-bg {
+  background: rgba(0, 0, 0, 0.5) url(img/backgrounds/admin-bg.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding-top: 0 !important;
+}
+
+.tbLimg img {
+  width: 8rem;
+}
+
+#add-pkg,
+#all-pkg,
+#add-cat,
+#all-cat {
+  display: none;
+}
+
+#add-pkg,
+#all-pkg,
+#add-cat,
+#all-cat {
+  box-shadow: 0px 0px 20px black;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#add-pkg form input,
+#add-pkg form textarea,
+#add-cat form input,
+#add-cat form textarea {
+  background: rgba(255, 255, 255, 0.2);
+  background-blend-mode: darken;
+  color: white;
+  font-weight: 600;
+} */
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+             packageTrip bg
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.package-bg {
+  background: rgba(0, 0, 0, 0.5) url(img/backgrounds/bangkok-bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  /* background-attachment: fixed; */
+  padding-top: 0 !important;
+}
+
+.sixty .sec-1 img {
+  padding: 0.5rem;
+  background-color: #d4d4d4;
+  border-radius: 50%;
+}
+
+.btn-lightGrey {
+  background-color: #d4d4d4;
+}
+
+.btn-lightGrey:hover {
+  background-color: #0a9e88;
+  color: white;
+}
+
+.btn-lightGrey:active {
+  background-color: #0a9e88;
+  color: white;
+}
+
+.btn-lightGrey:focus {
+  background-color: #0a9e88;
+  color: white;
+}
+
+.Myaccordion .accordion-item .accordion-header .accordion-button {
+  background-color: #d4d4d4;
+  color: black;
+}
+
+.Myaccordion .accordion-item .accordion-header .accordion-button:hover {
+  background-color: grey;
+  color: white;
+}
+
+/* \\\\\\\\\\\\\\ */
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-right: auto;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+@media only screen and (max-width: 535px) {
+  .buttn2-light {
+    justify-content: space-around !important;
+  }
+
+  .sixty .sec-1 {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .sixty .sec-1 div p {
+    font-size: 80%;
+  }
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+             contact-bg
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.contact-bg{
+  background: rgba(0, 0, 0, 0.411) url(img/backgrounds/contact-bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding-top: 0 !important;
+    /* height: 28rem; */
+}
